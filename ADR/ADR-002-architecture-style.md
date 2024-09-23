@@ -4,14 +4,14 @@
 2024-09-23
 
 ## Status:
-Accepted
+Proposed
 
 ## Context:
-
+The style of the architecture is the cornerstone of a succesfull software project. Depending on the style, additional decisions like databases, communication patterns, ... can be derived. 
 
 ## Decision:
-
+According to the requirements and the [Architecture Characteristics](/ArchitectureCharacteristics/) we decided to use the Service Based Architecture. Where needed for better inteoperability and deployability we want to use Eventdriven Architecture.
 
 ## Consequences:
-- A common understanding is created
-- A lot of time is spent on DDD, which might be missing otherwise
+- Service-Based Architecture is comparatively easier to maintain
+- Evenstreaming adds complexity, but enabled additional decoupling of capabilities
