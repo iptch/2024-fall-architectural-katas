@@ -90,6 +90,12 @@ quickly lead to different results.
 - A12: There are malicious or ambivalent employers
 - A13: There are malicious or ambivalent candidates
 - A15: Manual labour cost of ClearView employees is high compared to technical cost
+- A16: Diversity Cyber Council focuses more than 
+- A17: The upper bound of role openings per month in the US is 250'000, based on these statistics
+https://www.statista.com/statistics/200003/number-of-job-openings-in-the-us-information-sector/#:~:text=Number%20of%20monthly%20job%20openings%20in%20the%20U.S.%20information%20sector%202005%2D2023&text=As%20of%20May%202023%2C%20the,than%20in%20the%20previous%20years
+Assuming reaching a market share of 10%, we need to cater to 25'000 openings per month and around the same number of active candidates.
+- A18: The user interaction patterns with the platform are sparse (sporadic use) and with light data loads (mainly text).
+
 
 ## Open Questions
 - Should user be able to see their story? (Anonymized review)
