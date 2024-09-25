@@ -33,8 +33,7 @@ By utilizing the [C4](https://c4model.com/) approach to visualize software archi
 ###  Context diagram (C1)
 The context view allows us to get a first grasp of the actors and the external components interacting with the ClearView system.
 
-# TODO
-![Context diagram  (C1)](TODO)
+![Context diagram  (C1)](/C4/images/C1-Context.png)
 
 The full Context diagram with the description of the Actors can be found [here](/C4/C1-context.md).
 
