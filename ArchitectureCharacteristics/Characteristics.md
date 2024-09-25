@@ -39,4 +39,24 @@ Reduced priorities:
 
 ## Selecting the Top 3
 
-- TODO
+During the requirements gathering process and the [EventStorming](/EventStorming/) session, we identified three main challenges:
+
+- The use of AI introduces non-deterministic behavior, leading to significant uncertainty when new versions are released.
+- ClearView, as a nonprofit organization using AI, faces the risk of excessive costs.
+- Integrating multiple HR systems is a costly endeavor, as each system’s API is different.
+
+These challenges led us to conclude that *Feasibility*, *Interoperability*, and *Testability* are the top three driving factors for this project.
+
+### Feasibility
+- The Diversity Cyber Council is a donation-funded nonprofit organization, making both financial and developer resources limited.
+- Running AI models remains costly, adding to the financial constraints.
+
+### Interoperability
+- Integrating with numerous HR systems necessitates a robust strategy for developing an easy-to-implement integration framework.
+- To future-proof the ClearView program, we aim to ensure the interchangeability of AI models.
+
+### Testability
+- A testable setup is essential to guarantee the quality of newly deployed AI models.
+- Being able to review AI-generated results and compare them with expert opinions is essential for building trust in the outcomes
+- Regression tests should be executable without reliance on functioning third-party systems, highlighting the need for high system testability.
+

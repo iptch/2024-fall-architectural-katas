@@ -1,6 +1,6 @@
 # Context Diagram (C1)
 
-The context diagram offers an overview of the software system, including the users interacting with it and the external systems connected to the application."
+The context diagram offers an overview of the software system, including the users interacting with it and the external systems connected to the application.
 
 ![Context Diagram](/C4/images/C1-Context.png)
 
