@@ -2,7 +2,11 @@
 A (hopefully) pragmatic approach to the Architectural Kata 2024
 
 ## Team
-TODO
+![Team](/ArchitectureCharacteristics/images/team.png)
+
+- Stefano Tassone, [Linkedin](https://ch.linkedin.com/in/stefano-tassone)
+- James Dermelj, [Linkedin](https://ch.linkedin.com/in/james-dermelj-493446119)
+- Tobias Heller, [Linkedin](https://ch.linkedin.com/in/tobias-heller)
 
 ## Domain
 TODO
