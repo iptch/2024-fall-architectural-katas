@@ -17,6 +17,7 @@ Starting from the business requirements the following important characteristics 
 | **extensibility**    | The ease in which a system can be extended with additional features and functionality                                                             |
 | **configurability**  | The ability of the system to support multiple configurations, as well as support custom on-demand configurations and configuration updates         |
 | **abstraction**      | The level at which parts of the system are isolated from other parts of the system (both internal and external system interactions)               |
+| **data integrity** | The data across the system is correct and there is no data loss in the system |
 
 
 ## Choosing the driving characteristics
@@ -36,6 +37,7 @@ Reduced priorities:
 - **Extensibility**: Largely covered by adaptability.
 - **Configurability**: Not a priority, as HR system integrations will be handled via new releases, not on-demand changes.
 - **Abstraction**: Necessary at the code level, but not at the architectural level, for managing AI models and HR systems.
+- **Data integrity**: While essential, we believe it primarily impacts code implementation and overlaps with AI model testability, making it less relevant to the architecture.
 
 ## Selecting the Top 3
 
