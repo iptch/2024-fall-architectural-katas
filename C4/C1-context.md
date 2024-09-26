@@ -18,3 +18,5 @@ The persons were derived from the Actors discovered in the [EventStorming](/Even
 ## Software Systems
 - **ClearView**: The system under development.
 - **HR System**: Various HR platforms, such as *SAP SuccessFactors*, *Workday*, and others.
+- **Mail Server**: An external mail server used to send system notifications and reports.
+- **Survey System**: An external service, such as SurveyMonkey, used for creating and managing surveys.
