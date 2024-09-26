@@ -58,7 +58,7 @@ These challenges led us to conclude that *Feasibility*, *Interoperability*, and 
 - To future-proof the ClearView program, we aim to ensure the interchangeability of AI models.
 
 ### Testability
-- A testable setup is essential to guarantee the quality of newly deployed AI models.
+- Testing non-deterministic AI models is challenging, making strong testability crucial for the system.
 - Being able to review AI-generated results and compare them with expert opinions is essential for building trust in the outcomes
 - Regression tests should be executable without reliance on functioning third-party systems, highlighting the need for high system testability.
 
