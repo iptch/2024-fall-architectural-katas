@@ -22,7 +22,7 @@ The selection of characteristics provides the basis for the selection of an Arch
 ![ArchitecturalCharacteristics](/ArchitectureCharacteristics/images/architecture-characteristics.png)
 
 ## Architectural Type
-According to the [driving characteristics](/ArchitectureCharacteristics/Characteristics.md):
+According to the TOP 3 [driving characteristics](/ArchitectureCharacteristics/Characteristics.md):
 - interoperability
 - feasibility
 - testability

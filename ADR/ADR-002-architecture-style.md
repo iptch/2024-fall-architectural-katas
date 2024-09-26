@@ -12,6 +12,8 @@ The style of the architecture is the cornerstone of a succesfull software projec
 ## Decision:
 According to the requirements and the [Architecture Characteristics](/ArchitectureCharacteristics/) we decided to use the Service Based Architecture. Where needed for better inteoperability and deployability we want to use Eventdriven Architecture.
 
+TODO: James
+
 ## Consequences:
 - Service-Based Architecture is comparatively easier to maintain
 - Evenstreaming adds complexity, but enabled additional decoupling of capabilities
