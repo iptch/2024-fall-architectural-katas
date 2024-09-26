@@ -13,3 +13,4 @@ Questions for AI expert
 - How easy is it to predict the cost?
 - How can we test our AI?
 - Are you aware of special support for non-profit organizations?
+- How do APIs of AI Models look like (synchronous vs asynchronous vs long-running)
