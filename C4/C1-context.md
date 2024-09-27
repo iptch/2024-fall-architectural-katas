@@ -4,6 +4,8 @@ The context diagram offers an overview of the software system, including the use
 
 ![Context Diagram](/C4/images/C1-Context.png)
 
+The survey system was designated as an external system in [ADR-xx](TODO). Similarly, the mail server, as defined in [ADR-xx](TODO), is also considered an external system for this application.
+
 ## Persons
 The persons were derived from the Actors discovered in the [EventStorming](/EventStorming).
 

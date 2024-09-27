@@ -1,5 +1,5 @@
 # 2024-fall-architectural-katas
-A (hopefully) pragmatic approach to the Architectural Kata 2024
+A (hopefully) pragmatic approach to the O'Reilly Autumn Architectural Kata 2024
 
 ## Team
 ![Team](/ArchitectureCharacteristics/images/team.png)
@@ -8,7 +8,10 @@ A (hopefully) pragmatic approach to the Architectural Kata 2024
 - James Dermelj, [Linkedin](https://ch.linkedin.com/in/james-dermelj-493446119)
 - Tobias Heller, [Linkedin](https://ch.linkedin.com/in/tobias-heller)
 
-## Domain
+## Introduction
+TODO -> What is Diversity Equity Counsil about, what is the goal of ClearView?
+
+## Requirements
 TODO
 
 ## Event Storming
@@ -21,15 +24,15 @@ The selection of characteristics provides the basis for the selection of an Arch
 
 ![ArchitecturalCharacteristics](/ArchitectureCharacteristics/images/architecture-characteristics.png)
 
-## Architectural Type
+## Architecture style
 According to the TOP 3 [driving characteristics](/ArchitectureCharacteristics/Characteristics.md):
 - interoperability
 - feasibility
 - testability
 
-a service-based architecture [ADR-002](/ADR/ADR-002-architecture-style.md) was selected to leverage the optimal balance between feasibility and testability.
+a service-based architecture [ADR-002](/ADR/ADR-002-architecture-style.md) with event-streaming capabilities where needed, was selected to leverage the optimal balance between feasibility and testability.
 
-![Architectural Type](TODO)
+![Architecture style](/ADR/images/ADR-002-architecture-style.png)
 
 ## Architecture
 By utilizing the [C4](https://c4model.com/) approach to visualize software architecture, we can effectively illustrate the dependencies between various components of our application while emphasizing hierarchical relationships. Our primary focus will be on the C1 and C2 views to provide an initial overview, before delving into the C3 view to examine the core components in greater detail.
@@ -39,6 +42,6 @@ The context view allows us to get a first grasp of the actors and the external c
 
 ![Context diagram  (C1)](/C4/images/C1-Context.png)
 
-The full Context diagram with the description of the Actors can be found [here](/C4/C1-context.md).
+The full Context diagram with the description of the Actors and Systems can be found [here](/C4/C1-context.md).
 
 ## Known Limitations
