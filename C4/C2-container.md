@@ -6,7 +6,12 @@ The container diagram offers an overview of the containers of the system and how
 
 According to the service-based architecture [ADR-002](/ADR/ADR-002-architecture-style.md) we share the database between different containers to improve the simplicity and testability [ADR-014](/ADR/ADR-014-multiple-services-on-same-database.md). For the matches we use an event-based topic [ADR-016](/ADR/ADR-016-matches-published-as-events.md).
 
-**Important**: The AI models will run as external services as described in [ADR-007](/ADR/ADR-007-flexibility-toward-ai-models.md) to improve the adaptibility and the testability of the system.
+**Important**: The AI models will operate as external services, as outlined in [ADR-007](/ADR/ADR-007-flexibility-toward-ai-models.md), to enhance the system's adaptability and testability. These models will serve various purposes, including:
+
+- **Autofilling company information** for employers,
+- **Generating resume tips** for job candidates,
+- **Generating S.M.A.R.T stories**
+- **Developing features** for the matching algorithm.
 
 ### Story Container
 - **Anonymize Resume**: Removes all personally identifiable information (PII) from the candidate's resume.
@@ -22,7 +27,7 @@ This service is implemented as a separate microservice, as described in [ADR-009
 - **Asynchronous Decoupling**: Integrates with external HR systems by asynchronously consuming the matches topic to enable interoperability.
 - **Resume Upload**: Uploads a resume to the employer's HR system when a match is unlocked.
 
-See [C3 HR Integration Component](C4/C3-Components-HR-Integration.md) for more details.
+Since the interoperability with multiple HR systems is a main challenge of this system a [C3 HR Integration Components](C4/C3-components-hr-integration.md) was created.
 
 ### Analytics
 - **Data Gathering**: Read-only access to databases and topics for:

@@ -54,4 +54,13 @@ It also shows how the containers communicate with each another.
 The full Container diagram with the descriptions of the containers and  ADRs describing the decisions can be found [here](/C4/C2-container.md).
 
 
+### Components diagram (C3)
+To address the main challenges of this system, we created a components diagram:
+
+- **[HR Integration Components](/C4/C3-components-hr-integration.md)**: This diagram illustrates how we integrate **Interoperability** and **Fault Tolerance** into our architecture.
+- TODO -> Stefano AI -> testability
+
+## Usecases
+TODO (Sequence diagram)
+
 ## Known Limitations
