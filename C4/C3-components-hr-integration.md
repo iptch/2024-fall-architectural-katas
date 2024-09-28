@@ -15,7 +15,7 @@ For the HR Integration container we want to show how we incorporate the characte
 -  **Fault Tolerance and Reliability**  
    To ensure a fault-tolerant integration, a retry mechanism is implemented using dead-letter queues with an exponential backoff strategy. This setup guarantees message reprocessing in case of transient failures and prevents data loss.
 
-![Components Diagram (C3) - HR Integration](/C4/images/C3-components-hr-integration.png)
+![Components Diagram (C3) - HR Integration](/C4/images/C3-Components-hr-integration.png)
 
 ## Data flow
 
