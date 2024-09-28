@@ -1,5 +1,21 @@
-# 2024-fall-architectural-katas
+# Diversity Cyber Council - ClearView | O'Reilly Architectural Kata (Autumn 2024)
 A (hopefully) pragmatic approach to the O'Reilly Autumn Architectural Kata 2024
+
+TODO -> Update
+
+- [Team](#team)
+- [Introduction](#introduction)
+- [Requirements](#requirements)
+- [Event Storming](#event-storming)
+- [Architecture Characteristics](#architecture-characteristics)
+- [Architecture style](#architecture-style)
+- [Architecture](#architecture)
+  - [Context diagram (C1)](#context-diagram-c1)
+  - [Container diagram (C2)](#container-diagram-c2)
+  - [Components diagram (C3)](#components-diagram-c3)
+- [Usecases](#usecases)
+- [Known Limitations](#known-limitations)
+
 
 ## Team
 ![Team](/ArchitectureCharacteristics/images/team.png)
@@ -9,7 +25,18 @@ A (hopefully) pragmatic approach to the O'Reilly Autumn Architectural Kata 2024
 - Tobias Heller, [Linkedin](https://ch.linkedin.com/in/tobias-heller)
 
 ## Introduction
-TODO -> What is Diversity Equity Counsil about, what is the goal of ClearView?
+The [Diversity Cyber Council](https://www.diversitycybercouncil.com/) is a Non-Profit that helps under-represented demographics in the tech-industry with education, staffing and training opportunities.
+
+The *ClearView* program aims to harness AI to facilitate matches between candidates and job positions using anonymized resumes.
+
+**Key Objectives:**
+
+- **Develop an AI-Powered Matching Platform:** Create an effective system that minimizes bias in the hiring process.
+  
+- **Analyze Hiring Disparities:** Utilize metrics and surveys to uncover disparities between selected candidates and those who were not hired.
+  
+- **Seamless HR Integration:** Implement a streamlined integration with employers' HR systems to ensure a smooth interview experience.
+
 
 ## Requirements
 TODO
