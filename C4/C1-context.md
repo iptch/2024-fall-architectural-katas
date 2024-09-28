@@ -4,7 +4,7 @@ The context diagram offers an overview of the software system, including the use
 
 ![Context Diagram](/C4/images/C1-Context.png)
 
-The survey system was designated as an external system in [ADR-xx](TODO). Similarly, the mail server, as defined in [ADR-xx](TODO), is also considered an external system for this application.
+The survey system was designated as an external system in [ADR-20](/ADR/ADR-020-externalizing-survey-processes.md). Similarly, the mail server is also considered an external system for this application.
 
 ## Persons
 The persons were derived from the Actors discovered in the [EventStorming](/EventStorming).
@@ -21,4 +21,4 @@ The persons were derived from the Actors discovered in the [EventStorming](/Even
 - **ClearView**: The system under development.
 - **HR System**: Various HR platforms, such as *SAP SuccessFactors*, *Workday*, and others.
 - **Mail Server**: An external mail server used to send system notifications and reports.
-- **Survey System**: An external service, such as SurveyMonkey, used for creating and managing surveys.
+- **Survey System**: An external service, such as SurveyMonkey, used for creating and managing surveys. [ADR-18](/ADR/ADR-018-survey-service-decision.md) & [ADR-20](/ADR/ADR-020-externalizing-survey-processes.md).
