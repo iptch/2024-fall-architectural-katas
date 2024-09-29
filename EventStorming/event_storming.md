@@ -72,8 +72,6 @@ We conducted the initial Event Storming session by placing sticky notes on a tab
 In the second iteration, we digitized the workflow, transitioning from the physical sticky notes to a digital format for easier collaboration and refinement.
 ![Event Storming 2. iteration digital](/EventStorming/assets/Eventstorming.png)
 
-## Iteration 2
-
 ## Conclusion
 
 The Event Storming workshop helped us gain a clear understanding of our business processes and uncover important insights. We documented actors, commands, domain events, external systems, and clarified open issues.

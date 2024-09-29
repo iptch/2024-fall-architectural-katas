@@ -41,11 +41,12 @@ The *ClearView* program aims to harness AI to facilitate matches between candida
 ## Requirements
 TODO
 
-## Event Storming
-TODO
+## [Event Storming](./EventStorming/event_storming.md)
+We used Event Storming to explore and map out various domains within our business processes. The session focused on capturing and documenting the flow of events, actors, and interactions between systems. This document summarizes our outcomes and serves as a guide to understanding our approach.
+
 
 ## Architecture Characteristics
-Starting from the business requirements(Add link) and the [Event Storming](/EventStorming) we determined the [architecture characteristics](/ArchitectureCharacteristics/Characteristics.md).
+Starting from the business requirements(Add link) and the [Event Storming](./EventStorming/event_storming.md) we determined the [architecture characteristics](/ArchitectureCharacteristics/Characteristics.md).
 
 The selection of characteristics provides the basis for the selection of an Architectural Type. We selected the following seven characteristics and focused our attention on the three most important characteristics.
 
