@@ -1,7 +1,3 @@
-Here is the completed ADR in English with a sentence for each section:
-
----
-
 # ADR-011: Matching based on AI or deterministic methods
 
 ## Date:
