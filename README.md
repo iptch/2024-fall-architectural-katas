@@ -92,3 +92,8 @@ To address the main challenges of this system, we created a components diagram:
 TODO (Sequence diagram)
 
 ## Known Limitations
+
+## Diagrams
+
+The diagrams in this project were created using [https://www.drawio.com/](https://www.drawio.com/). They can be viewed and edited directly by importing or opening the corresponding .drawio files.
+
