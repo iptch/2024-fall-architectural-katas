@@ -4,18 +4,25 @@
 2024-09-26
 
 ## Status:
-Proposed
+Accepted
 
 ## Context:
-Transmitting data Point 5 tp Analkyticw & Reports
-Opt 1: Analytics reads directly from candidate DB
-fault tolerance | separation of concern. operational vs. analytics
+Data Point 5 (Demographic Information) needs to be transferred to Analytics & Reporting service.
 
-Opt 2: Candidate sends to Analytics
-stronger privacy of candidate db
-Opt 3: Asynchronous delivery
-Related: Should we only have asynchronous communication to the analytics service, to have better separation of concerns?
+- Opt 1: Analytics reads directly from candidate DB
+fault tolerance, separation of concern. operational vs. analytics. But direct access to sensitive information.
+- Opt 2: Candidate sends to Analytics. Stronger privacy of candidate DB. But strong coupling (fault-intolerance) to Analytics & Reporting.
+- Opt 3: Asynchronous delivery via topic. Like 2, but with weaker coupling, better fault-tolerance.
 
 ## Decision:
+Opt 2: Analytics may read directly from candidate DB
 
 ## Consequences:
+
+### Strengthened characteristics:
+- Simplicity
+- Maintainability
+- Performance
+
+### Weakened characteristics:
+- Security (since it can access and holds most data)

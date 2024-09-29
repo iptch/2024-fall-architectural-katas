@@ -6,7 +6,7 @@ The container diagram offers an overview of the containers of the system and how
 
 According to the service-based architecture [ADR-002](/ADR/ADR-002-architecture-style.md) we share the database between different containers to improve the simplicity and testability [ADR-014](/ADR/ADR-014-multiple-services-on-same-database.md). For the matches we use an event-based topic [ADR-016](/ADR/ADR-016-matches-published-as-events.md).
 
-**Important**: The AI models will operate as external services, as outlined in [ADR-007](/ADR/ADR-007-flexibility-toward-ai-models.md), to enhance the system's adaptability and testability. These models will serve various purposes, including:
+**Important**: The AI models will operate as external services, as outlined in [ADR-007](/ADR/ADR-007-use-of-external-llms.md), to enhance the system's adaptability and testability. These models will serve various purposes, including:
 
 - **Autofilling company information** for employers,
 - **Generating resume tips** for job candidates,
@@ -21,7 +21,7 @@ This service is implemented as a separate microservice, as described in [ADR-009
 
 ### Matching Container
 - **Feature Extraction**: Generates quantitative, human-readable features ("spyders") from job positions and S.M.A.R.T stories ([ADR-010](/ADR/ADR-010-create-features-from-story-not-resumes.md)).
-- **Match Scoring**: Creates a match with a score between job positions and S.M.A.R.T stories using these features ([ADR-011](/ADR/ADR-011-matching-based-on-ai-or-deterministic-methods.md), [ADR-012](/ADR/ADR-012-matching-algorithm-and-spyder.md)).
+- **Match Scoring**: Creates a match with a score between job positions and S.M.A.R.T stories using these features ([ADR-011](/ADR/ADR-011-deterministic-matching.md).
 
 ### HR Integration
 - **Asynchronous Decoupling**: Integrates with external HR systems by asynchronously consuming the matches topic to enable interoperability.

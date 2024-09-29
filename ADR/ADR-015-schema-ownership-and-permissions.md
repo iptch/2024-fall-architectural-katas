@@ -7,8 +7,24 @@
 Accepted
 
 ## Context:
-Es gibt nur ein owner pro Schema, und dieser darf schreiben. Kann man durch DB berechtigungen enforcen.
+
+ADR-014 may quickly lead to chaotic coupling. We introduce the additional rule:
 
 ## Decision:
+- For each object in a DB only one service has the right to write to the database.
+  It is the owner of the schema. This makes schema changes more predictable and maintainable.
+- This should be enforced with DB permissions.
 
 ## Consequences:
+- Documentation effort for schema ownerships
+- Configuration effort for DB permissions
+
+
+
+### Strengthened characteristics:
+- Maintainability
+- Data integrity
+- Testability
+
+### Weakened characteristics:
+- Adaptability

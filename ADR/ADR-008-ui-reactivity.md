@@ -7,8 +7,20 @@
 Accepted
 
 ## Context:
-UI reactivity must not depend on long running processes or external calls
+
+For [Q26](/Requirements/requirements-and-assumptions.md), we need to ensure a responsive UI.
+Some calls, especially external ones, may be long running and lead to a delay in the UI.
 
 ## Decision:
+Whenever the UI triggers long-running calls, they need to be decoupled from the long running threads.
+We do this using queues, making them asynchronous calls.
 
 ## Consequences:
+The UI design to consider failures and failure messaging to the user more carefully.
+
+### Strengthened characteristics:
+- Responsiveness
+- Failure-tolerance
+
+### Weakened characteristics:
+- Testability (more cases of message ordering are possible)

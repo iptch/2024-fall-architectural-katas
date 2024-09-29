@@ -6,9 +6,23 @@
 Accepted
 
 ## Context:
-Matches status changes are key events that influence many conponents of the system. Therefore we put them asynchronously into a topic allowing for loose coupling.
-Also extensions for notification or other services is very easy to do.
+Matches status changes are key events that influence use-cases in many parts of the system.
+With synchronous communication, the whole system is strongly coupled leading to bad fault-tolerance.
+We mitigate this by creating a event-queue to allow for asynchronous communication between these use cases.
 
 ## Decision:
 
 ## Consequences:
+- Technology decision: shared queues / event streaming
+
+
+
+### Strengthened characteristics:
+- Fault-tolerance
+- Evolvability
+- Performance
+- Scalability
+
+### Weakened characteristics: 
+- Testability
+- Simplicity

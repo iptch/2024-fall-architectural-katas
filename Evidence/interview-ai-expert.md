@@ -2,10 +2,8 @@ Questions for AI expert Dario R.
 ---
 
 - What LLM solutions exist for enterprises?
-  - Azure 
-  - Google Cloud
-  - OpenAI
-- 
+  - They know: Azure, Google Cloud, OpenAI
+
 - Is specialized knowledge necessary?
   - On the solution design level it is very highly specialize knowledge. You pay either for mistakes
   that are made or for highly skilled and experienced proffessionals.
