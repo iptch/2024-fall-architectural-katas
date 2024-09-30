@@ -37,6 +37,8 @@ TODO -> Dont store resume ADR-007
 5. Once anonymized, the **Story Container** returns the anonymized resume to the **Resume Service**.
 6. The **Resume Service** stores the anonymized resume in the **Job Candidate Database**.
 
+This use case is described as a sequence diagram in further detail [here](/UseCases/use-case-upload-a-resume.md).
+
 ### Managing Candidate Information
 
 1. The **Candidate** can update or modify their information through the **Candidate API**.
