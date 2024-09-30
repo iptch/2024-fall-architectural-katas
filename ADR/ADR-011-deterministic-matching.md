@@ -32,7 +32,8 @@ The options we considered were:
 
 - **A) Extracting features from both the role and the story, then performing a static match.
 - **B) Using features extracted by AI but made static and understandable by humans.
-- **C) Letting AI directly match resumes and roles, but this was discarded due to bias concerns.
+- **C) Letting AI directly match resumes and roles, but this was discarded due to bias concerns and it contradicts 
+[ADR-010](/ADR/ADR-010-create-features-from-story-not-resumes.md)
 - **D) Allowing AI to assess whether a story and role should match.
 - **E) Matching stories and roles using human-readable features and calculating a match score.
 - **F) Each role has its own features, and candidates are evaluated based on these, but this approach was too
@@ -48,7 +49,6 @@ but quadratic for all others.
 - The asymptotic complexity is only relevant, if a large amount of open roles should be considered for a resume.
 However, if the number of open roles to be considered are reduced beforehand, f.ex. by input of the candidate,
 utilization and cost may drop significantly.
-
 
 ## Decision:
 

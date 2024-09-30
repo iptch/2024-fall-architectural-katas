@@ -39,6 +39,7 @@ The *ClearView* program aims to harness AI to facilitate matches between candida
     and the corresponding [visualization](/C4/C3-components-matching.md)
     - Other architectural considerations, such as [ADR-006](/ADR/ADR-006-ai-models-run-on-separate-containers.md),
       [ADR-007](/ADR/ADR-007-use-of-external-llms.md)
+    - [ADR-025: AT test concept](/ADR/ADR-025-ai-test-concept.md)
 
 - **Analyze Hiring Disparities:** Utilize metrics and surveys to uncover disparities between selected candidates and those who were not hired.
   - Our main contributions for this objective are design decisions such as:
@@ -57,10 +58,6 @@ The *ClearView* program aims to harness AI to facilitate matches between candida
 ## Event Storming
 We used [Event Storming](./EventStorming/event_storming.md) to explore and map out various domains within our business processes. The session focused on capturing and documenting the flow of events, actors, and interactions between systems. This document summarizes our outcomes and serves as a guide to understanding our approach.
 
-## Glossary
-
-The [glossary](/Requirements/glossary.md) defines terms we use.
-
 ## Requirements
 
 Based on the problem description, our [Event Storming](./EventStorming/event_storming.md), and research, we compiled a list of [functional
@@ -72,12 +69,24 @@ The requirements and assumptions are numbered and are referenced in the followin
 
 We typically link to the file, but due to markdown limitations, the specific entry can not be referenced in the link.
 
+The [glossary](/Requirements/glossary.md) defines terms we use.
+
 ## Architecture Characteristics
 Starting from the business requirements(Add link) and the [Event Storming](./EventStorming/event_storming.md) we determined the [architecture characteristics](/ArchitectureCharacteristics/Characteristics.md).
 
 The selection of characteristics provides the basis for the selection of an Architectural Type. We selected the following seven characteristics and focused our attention on the three most important characteristics.
 
 ![ArchitecturalCharacteristics](/ArchitectureCharacteristics/images/architecture-characteristics.png)
+
+These driving characteristics significantly influenced our ADRs. The following ADRs were important to realize our
+TOP 3 driving characteristics:
+
+- interoperability
+  - ADR TODO
+- feasibility
+  - ADR TODO
+- testability
+  - ADR TODO
 
 ## Architecture style
 According to the TOP 3 [driving characteristics](/ArchitectureCharacteristics/Characteristics.md):
@@ -106,7 +115,7 @@ It also shows how the containers communicate with each another.
 
 ![Container diagram (C2)](/C4/images/C2-Container.png)
 
-The full Container diagram with the descriptions of the containers and  ADRs describing the decisions can be found [here](/C4/C2-container.md).
+The full Container diagram with the descriptions of the containers and ADRs describing the decisions can be found [here](/C4/C2-container.md).
 
 
 ### Components diagram (C3)
