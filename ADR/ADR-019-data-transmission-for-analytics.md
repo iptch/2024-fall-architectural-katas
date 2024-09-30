@@ -15,7 +15,7 @@ fault tolerance, separation of concern. operational vs. analytics. But direct ac
 - Opt 3: Asynchronous delivery via topic. Like 2, but with weaker coupling, better fault-tolerance.
 
 ## Decision:
-Opt 2: Analytics may read directly from candidate DB
+Opt 1: Analytics may read directly from candidate DB
 
 ## Consequences:
 

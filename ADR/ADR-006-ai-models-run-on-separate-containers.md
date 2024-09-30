@@ -19,7 +19,7 @@ is only used for a small subset of functionality. The scalability needs are ther
 If a Domain service would scale horizontally due to heavy traffic, and AI model were included in the runtime, 
 another model would be started unnecessarily using additional resources.
 
-Forward looking: If domain services end up consolidating and sharing their AI resources, it would make sense for the AI service
+Forward-looking: If domain services end up consolidating and sharing their AI resources, it would make sense for the AI service
 to be separated from domain services anyway. Keeping the AI runtime in one domain would be confusing since there is no 
 justification in terms of DDD.
 

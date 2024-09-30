@@ -12,7 +12,7 @@ For [Q26](/Requirements/requirements-and-assumptions.md), we need to ensure a re
 Some calls, especially external ones, may be long running or costly and lead to a delay in the UI.
 
 ## Decision:
-- Whenever the UI triggers long-running calls, they need to be decoupled from the long running threads.
+- Whenever the UI triggers long-running calls, they need to be decoupled from the long-running threads.
 - We do this using queues, making them asynchronous calls.
 - Costly operations like matching should run periodically in the background.
 

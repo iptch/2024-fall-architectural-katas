@@ -18,7 +18,7 @@ TODO -> Update
 
 
 ## Team
-![Team](/ArchitectureCharacteristics/images/team.png)
+![Team](./ArchitectureCharacteristics/images/team.png)
 
 - Stefano Tassone, [Linkedin](https://ch.linkedin.com/in/stefano-tassone)
 - James Dermelj, [Linkedin](https://ch.linkedin.com/in/james-dermelj-493446119)
@@ -32,23 +32,43 @@ The *ClearView* program aims to harness AI to facilitate matches between candida
 **Key Objectives:**
 
 - **Develop an AI-Powered Matching Platform:** Create an effective system that minimizes bias in the hiring process.
-  
+  - Our main contributions for this objective are:
+    - Research, such as [interview with an AI-expert](/Requirements/Research/interview-ai-expert.md) and 
+    [token estimation of a sample prompt](/Requirements/Research/token-estimation.md) leading to many
+    [assumptions and requirements](/Requirements/requirements-and-assumptions.md), 
+    - Matching algorithm considerations, such as [ADR-010](/ADR/ADR-010-create-features-from-story-not-resumes.md) and
+    [ADR-011, deterministic matching](/ADR/ADR-011-deterministic-matching.md), 
+    and the corresponding [visualization](/C4/C3-components-matching.md)
+    - Other architectural considerations, such as [ADR-006](/ADR/ADR-006-ai-models-run-on-separate-containers.md),
+      [ADR-007](/ADR/ADR-007-use-of-external-llms.md)
+
 - **Analyze Hiring Disparities:** Utilize metrics and surveys to uncover disparities between selected candidates and those who were not hired.
+  - Our main contributions for this objective are design decisions such as:
+    - [ADR-003](/ADR/ADR-003-batch-for-analytics.md)
+    - [ADR-018](/ADR/ADR-018-location-of-survey-triggers.md)
+    - [ADR-019](/ADR/ADR-019-data-transmission-for-analytics.md)
+    - [ADR-020](/ADR/ADR-020-externalizing-survey-processes.md)
   
 - **Seamless HR Integration:** Implement a streamlined integration with employers' HR systems to ensure a smooth interview experience.
+  - Our main contributions for this objective are design decisions such as:
+    - Asynchronous trigger: [ADR-016](/ADR/ADR-016-matches-published-as-events.md)
+      - Fault-tolerant and scalable HR Integration Service: [ADR-023](/ADR/ADR-023-adapters-for-hr-systems.md) and its
+      [visualization](/C4/C3-components-hr-integration.md)
 
-## TLDR - How did we ?
-TODO James
--> Mabye to the key objectives
-
-## Requirements
-- TODO James
-- TODO James Glossary 
-- TODO AI & 
 
 ## Event Storming
 We used [Event Storming](./EventStorming/event_storming.md) to explore and map out various domains within our business processes. The session focused on capturing and documenting the flow of events, actors, and interactions between systems. This document summarizes our outcomes and serves as a guide to understanding our approach.
 
+## Requirements
+
+Based on the problem description, our [Event Storming](./EventStorming/event_storming.md), and research, we compiled a list of [functional
+and non-functional requirements](/Requirements/requirements-and-assumptions.md) complemented by a set of assumptions.
+The requirements and assumptions are numbered and are referenced in the following way:
+- Ri (f. ex. [R2](/Requirements/requirements-and-assumptions.md)), for functional requirements 
+- Qi (f.ex. [Q13](/Requirements/requirements-and-assumptions.md)), for non-functional requirements
+- Ai (f. ex. [A22](/Requirements/requirements-and-assumptions.md)) , for assumptions
+
+We typically link to the file, but due to markdown limitations, the specific entry can not be referenced. in the link.
 
 ## Architecture Characteristics
 Starting from the business requirements(Add link) and the [Event Storming](./EventStorming/event_storming.md) we determined the [architecture characteristics](/ArchitectureCharacteristics/Characteristics.md).

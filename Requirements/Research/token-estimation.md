@@ -42,6 +42,7 @@ Based on https://web.archive.org/web/20240929131353/https://openai.com/api/prici
 With the latest model, GPT-4o, the cost would be at minimum: 0.025 $ / prompt & answer.
 With the older, cheapest, model GPT-4o mini, the cost would be at minimum  0.001 $ / prompt & answer.
 
+Leading to assumption: A24
 
 
 

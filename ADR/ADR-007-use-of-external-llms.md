@@ -7,17 +7,17 @@
 Accepted
 
 ## Context:
-Our interview with the AI expert [](/Evidence/interview-ai-expert.md) led to new insight concerning
-LLMs leading to assumptions A TODO
+Our [interview with the AI expert](/Requirements/Research/interview-ai-expert.md) led to new insight concerning
+LLMs, and some important assumptions [A24, A25, A21, A20](/Requirements/requirements-and-assumptions.md)
 
 The following AI-use-cases need to be supported:
-- A: Resume-Tips
-- B: Automatic filling of employee data during registration
-- C: Transformation of resume to story
-- D: Extraction of features from stories and open role (TODO)
+- A: Resume-Tips [A24, A25, A21, A20](/Requirements/requirements-and-assumptions.md)
+- B: Automatic filling of employee data during registration [A24, A25, A21, A20](/Requirements/requirements-and-assumptions.md)
+- C: Transformation of resume to story [A24, A25, A21, A20](/Requirements/requirements-and-assumptions.md)
+- D: Extraction of features from stories and open role [A24, A25, A21, A20](/Requirements/requirements-and-assumptions.md)
 
 We discussed three propositions:
-- A: Use external LLM services as offered for example by Azure, Google, OpenAI.
+- A: Use external AI (LLM) services as offered for example by Azure, Google, OpenAI.
   - +: Little development cost
   - +: Easy adaptation to the latest trends and models.
   - +: Tendency to become cheaper
@@ -47,11 +47,8 @@ We discussed three propositions:
 ## Consequences:
 
 - AI development can start without delay, faster TTM.
-- Need to somehow track rate to avoid surpassing rate-limit.
+- Need to somehow track rate to avoid surpassing rate-limit (currently not solved, part of our [Known Limitations](/README.md#known-limitations))
 - Cost is more predictable.
-- Need a good strategy for 
-
-
 
 ### Strengthened characteristics:
 
@@ -66,4 +63,4 @@ We discussed three propositions:
 - Feasibility (Need to check privacy regulations)
 - Responsiveness (User-facing AIs)
 - Observability (Less metrics about external system)
-- Deployability (Due to the risk of LLMs becoming EOL. High effort of testing and migrating to new LLMs)
+- Deployability (Due to the risk of LLMs becoming EOL (end-of-life). High effort of testing and migrating to new LLMs)

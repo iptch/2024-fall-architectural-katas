@@ -3,10 +3,12 @@
 Requirements are numbered. Functional begin with A, non-functional (qualitative) with Q.
 Some are based on Assumptions. 
 
-The assumptions are at the bottom and the numbering begins with A.
-
 This is an iterative process: When deleting, do not reorder or reassign numbers but just leave
 a gap. Also make sure to maintain the uniqueness of the numbering when adding new entries.
+
+Also consider the research:
+- [Interview with AI expert](/Requirements/Research/interview-ai-expert.md)
+- [Token estimation of a sample prompt](/Requirements/Research/token-estimation.md)
 
 
 ## Functional requirements
@@ -109,24 +111,3 @@ Assuming reaching a market share of 10%, we need to cater to 25'000 openings per
 - A31: With A30, if we also assume that on average, the companies have 2 HR systems, 
 there could be a need of up to 200'000 HR systems being configured.
 
-## Open Questions
-- Should user be able to see their story? (Anonymized review)
-- How many matches should there be? Is there e dynamic threshold or is it fixed? Influences, if we need a "score"
-- Does the action 'hire', mark the moment a person was actually hired, therefore the closure of an open role,
-or is it only a status representing, that a candidate entered the next round of the hiring process?
-  - We decided the representation of an actual hire is the better decision, since: 
-    - it delivers more accurate datapoints for analytics. 'hired' is stronger than 'reaching next round'
-    - it does not prematurely interfere with the statuses of candidate and open role
-  - although:
-    - the incentive of an employer to properly close a role, create acurate statistics is less
-      (Unsere Entscheidung widerspricht dem Data Point 1 im Doc)
-- If a resume is unlocked, and matched again with a position of the same employer, is the resume free to unlock?
-- Contradictions in slides vs. doc:
-  - word "resume" vs. "full profile" in an unlock.
-  - suddenly it's an interview..
-- what is 'solution building services' with executives
-- Important!: Matching pre-filtering? Does user need to enter, where they want to apply?
-- We did not 
-## Notes for later
-- A9 & A10 shows a contradiction. Could be a interesting base for an argument
-- Idea: Use as little AI as necessary
