@@ -1,4 +1,4 @@
-# ADR-010: Create features from story, not resumes
+# ADR-010: Create features from story, not resumes TODO limit access to resumes
 
 ## Date:
 2024-09-26
@@ -7,7 +7,21 @@
 Accepted
 
 ## Context:
-Create features from story, and not from resumes. Reason: Anonymization
+
+Reasoning can be seen in Q4. This a principle that can be enforced also 
+through architecture by limiting the matching algorithms access to resumes.
+
 ## Decision:
 
-## Consequences:
+- Resumes are only persisted in the Candidate service, and access requires special privileges which
+are not given to the matching service.
+- The story service does
+
+
+
+### Strengthened characteristics:
+- Feasibility (important insight, one of the main selling points, enforced by architecture rule)
+- Security (important privacy requirement)
+
+### Weakened characteristics:
+- Adaptability

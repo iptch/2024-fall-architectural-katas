@@ -7,9 +7,23 @@
 Accepted
 
 ## Context:
-Survey process is externalized
-Reasons: Cost. Existing cheap solutions exist already.
+Survey process is externalized by the use of SurveyMonkey or similar.
+Existing cheap solutions exist already.
+Trigger is explained in ADR-018.
+Survey data if fetched from the external survey system
+by the Analytics and Report system.
 
 ## Decision:
+Survey process is externalized by the use of SurveyMonkey or similar.
 
 ## Consequences:
+
+### Strengthened characteristics:
+- Cost (no new services, use of existing cheap external solution)
+- Simplicity
+- Agility
+
+### Weakened characteristics:
+- Fault-tolerance (another external service)
+- Maintainability (external connection needs to be maintained twice
+due to ADR-018)

@@ -7,8 +7,31 @@
 Accepted
 
 ## Context:
-Es dürfen mehrere Services auf die gleiche DB haben, Vorteil: Cost benefit. Einer der Gründe warum wir das machen.
-Nachteil:Schemaabh":angigkeiten auf DB. Weniger guter Contract als API. Zum entschärfen, nächster ADR
+
+Several services need the same objects, for example the object story is used by the services
+Candidate, Story, Matching and Employer.
+Since we opted for a service-based architecture and not microservices, we have the possibility to allow several services
+to access the same DBs.
+
 ## Decision:
 
+Services may access the same DB
+
 ## Consequences:
+May lead to chaotic coupling. Therefore, we added ADR-015
+
+
+
+
+### Strengthened characteristics:
+- Cost (fewer DBs)
+- Simplicity
+
+### Weakened characteristics:
+- Maintainability
+- Testability
+- Data integrity
+- Fault tolerance
+
+
+
