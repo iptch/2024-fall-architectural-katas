@@ -84,9 +84,7 @@ We typically link to the file, but due to markdown limitations, the specific ent
 The [glossary](/Requirements/glossary.md) defines terms we use.
 
 ## Architecture Characteristics
-
-Starting from the business requirements(Add link) and the [Event Storming](./EventStorming/event_storming.md) we
-determined the [architecture characteristics](/ArchitectureCharacteristics/Characteristics.md).
+Starting from the [business requirements](/Requirements/requirements-and-assumptions.md) and the [Event Storming](./EventStorming/event_storming.md) we determined the [architecture characteristics](/ArchitectureCharacteristics/Characteristics.md).
 
 The selection of characteristics provides the basis for the selection of an Architectural Type. We selected the
 following seven characteristics and focused our attention on the three most important characteristics.
