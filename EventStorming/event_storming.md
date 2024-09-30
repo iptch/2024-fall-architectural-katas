@@ -12,7 +12,6 @@ In our recent workshop, we used Event Storming to explore and map out various do
 - **Clarify ambiguities**: Document open questions, decisions, problems, and solutions as they arose during the session.
 
 ## Workshop Outcomes
-TODO: Add sticky notes
 
 ### 1. **Actors**:
 ![Actor](/EventStorming/assets/actor.png)

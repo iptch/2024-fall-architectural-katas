@@ -37,7 +37,7 @@ Since the interoperability with multiple HR systems is a main challenge of this 
 - **Data Analysis**: Detects potential biases in the hiring process.
 - **Report Generation**: Creates reports for employers and job candidates.
 
-For more details, see [ADR-017](ADR/ADR-017-analytics-and-reporting-as-own-service.md).
+For more details, see [ADR-017](/ADR/ADR-017-analytics-and-reporting-as-own-service.md).
 
 ## Persons
 The persons are identical to the one used in the Context Diagram, for reference check the documentation [here](/C4/C1-context.md).

@@ -5,13 +5,13 @@ In the C4 model, the C3 diagrams highlight how components within a container ope
 ### Story Processing Overview
 
 - **AI-Driven Automation**  
-  The story processing pipeline leverages AI-based adapters to automate the rating and anonymization of candidate resumes, as detailed in [ADR-006: AI Models run on separate containers](ADR/ADR-006-ai-models-run-on-separate-containers.md). This ensures consistency, scalability, and efficiency in processing and anonymizing data.
+  The story processing pipeline leverages AI-based adapters to automate the rating and anonymization of candidate resumes, as detailed in [ADR-006: AI Models run on separate containers](/ADR/ADR-006-ai-models-run-on-separate-containers.md). This ensures consistency, scalability, and efficiency in processing and anonymizing data.
 
 - **Asynchronous Event Handling**  
-  The system operates asynchronously, using events to process stories, ensuring decoupling between services, as described in [ADR-005: Asynchronous Communication with External Systems](ADR/ADR-005-async-with-external-systems.md).
+  The system operates asynchronously, using events to process stories, ensuring decoupling between services, as described in [ADR-005: Asynchronous Communication with External Systems](/ADR/ADR-005-async-with-external-systems.md).
 
 - **Deterministic Processing**  
-  The anonymization and rating processes follow deterministic logic to ensure predictable and reliable results, as described in [ADR-011: Deterministic Matching](ADR/ADR-011-deterministic-matching.md).
+  The anonymization and rating processes follow deterministic logic to ensure predictable and reliable results, as described in [ADR-011: Deterministic Matching](/ADR/ADR-011-deterministic-matching.md).
 
 ![Components Diagram (C3) - Story Processing](/C4/images/C3-components-story.png)
 
