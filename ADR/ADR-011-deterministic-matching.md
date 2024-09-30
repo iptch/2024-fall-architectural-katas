@@ -16,6 +16,8 @@ cost and performance.
 
 We defined:
 
+TODO: Add to glossary!
+
 - Resume: PDF as uploaded by user
 - Story: Anonymized format of the resume as text, void of information that could lead to unfair discrimination.
 - Features: Quantified distribution of personal skills, traits, experience across principal components. Not human
