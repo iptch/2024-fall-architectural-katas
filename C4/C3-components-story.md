@@ -11,6 +11,8 @@ For the Story Processing container, we want to show how we incorporate the chara
 
 ![Components Diagram (C3) - Story Processing](/C4/images/C3-components-story.png)
 
+TODO: Asynchronous to adapter
+
 ## Data flow
 
 ### Sending a Resume for Story

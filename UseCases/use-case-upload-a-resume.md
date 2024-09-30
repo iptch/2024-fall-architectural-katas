@@ -1,8 +1,8 @@
-# Usecase: Upload a resume
+# Usecase: Upload and publish a resume
 
 TODO: Link in C3 / job candidate
 
 ## Involved Containers
-- Job candidate container, as described in:
+- Upload 
 
 ## Sequence diagram

@@ -113,10 +113,7 @@ To address the main challenges of this system, we created a components diagram:
 - **[HR Integration Components](/C4/C3-components-hr-integration.md)**: This diagram illustrates how we integrate **Interoperability** and **Fault Tolerance** into our architecture.
 - TODO -> Stefano AI -> testability
 
-## Usecases
-
-
-
+An interaction of the Containers and Components is documented in the Use Case: [Upload and Publish a Resume](/UseCases/use-case-upload-a-resume.md)
 
 ## Known Limitations
 The current architecture has the following limitations:
