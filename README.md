@@ -1,20 +1,18 @@
 # Diversity Cyber Council - ClearView | O'Reilly Architectural Kata (Autumn 2024)
 A (hopefully) pragmatic approach to the O'Reilly Autumn Architectural Kata 2024
 
-TODO -> Update
-
 - [Team](#team)
 - [Introduction](#introduction)
-- [Requirements](#requirements)
 - [Event Storming](#event-storming)
+- [Requirements](#requirements)
 - [Architecture Characteristics](#architecture-characteristics)
 - [Architecture style](#architecture-style)
 - [Architecture](#architecture)
   - [Context diagram (C1)](#context-diagram-c1)
   - [Container diagram (C2)](#container-diagram-c2)
   - [Components diagram (C3)](#components-diagram-c3)
-- [Usecases](#usecases)
 - [Known Limitations](#known-limitations)
+- [Diagrams](#diagrams)
 
 
 ## Team
@@ -68,7 +66,7 @@ The requirements and assumptions are numbered and are referenced in the followin
 - Qi (f.ex. [Q13](/Requirements/requirements-and-assumptions.md)), for non-functional requirements
 - Ai (f. ex. [A22](/Requirements/requirements-and-assumptions.md)) , for assumptions
 
-We typically link to the file, but due to markdown limitations, the specific entry can not be referenced. in the link.
+We typically link to the file, but due to markdown limitations, the specific entry can not be referenced in the link.
 
 ## Architecture Characteristics
 Starting from the business requirements(Add link) and the [Event Storming](./EventStorming/event_storming.md) we determined the [architecture characteristics](/ArchitectureCharacteristics/Characteristics.md).
