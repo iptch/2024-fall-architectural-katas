@@ -43,7 +43,7 @@ Also consider the research:
 
 ### Assumed
 - R11, based on A1: Employer can open accounts for hiring managers.
-- R23: based on A1: A hiring manager has access to a subset of an employers open positions and their matches
+- R23: based on A1: A hiring manager has access to a subset of an employers open roles and their matches
 - R24: based on A3: Candidate can delete their resume from the platform
 - R25: based on A12: The candidate must be able to confirm or deny their hired status
 - R26, based on A4: An employer can configure several HR systems for transfer
@@ -78,7 +78,7 @@ who are hired and those who were not selected.
 
 ## Assumptions
 - A1: An employer may have several hiring managers representing different branches or departments in the company.
-- A2: Hiring managers often work together on the same set of open positions.
+- A2: Hiring managers often work together on the same set of open roles.
 - A3: Clear view wants to convey a particularly high level of privacy and security
 - A4: Some big employers maintain different HR systems for different branches, departments.
 - A5: Some small employers have no common HR system or none at all

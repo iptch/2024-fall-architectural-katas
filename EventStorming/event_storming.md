@@ -61,7 +61,7 @@ One key decision was to make the payment process synchronous, ensuring that paym
 ## Key Decisions
 
 - **Anonymized resumes**: Resumes are anonymized and referred to as "Stories" to ensure privacy. TODO link to glossary and ADR-011
-- **Use adapters": TODO -> ADR-23, ADR-005
+- **Use adapters**: TODO -> ADR-23, ADR-005
 - **Good understanding of requiremetns and addtionon of assumed and additional requirements**: TODO -> Link Requirements
 
 ## 1. Iteration

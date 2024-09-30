@@ -12,7 +12,7 @@ The persons were derived from the Actors discovered in the [EventStorming](/Even
 | **Person**         | **Description**                                         |
 |--------------------|---------------------------------------------------------|
 | Job Candidate      | A job candidate who uses the platform to find a matching position |
-| Hiring Manager     | A hiring manager who uploads job positions, views matches, and unlocks resumes.  |
+| Hiring Manager     | A hiring manager who uploads open roles, views matches, and unlocks resumes.  |
 | Employer           | Provides employer and HR Integration information |
 | Administrator      | Administers users and employers. Has access to reports and analytics. |
 

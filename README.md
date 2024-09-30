@@ -25,7 +25,7 @@ A (hopefully) pragmatic approach to the O'Reilly Autumn Architectural Kata 2024
 ## Introduction
 The [Diversity Cyber Council](https://www.diversitycybercouncil.com/) is a Non-Profit that helps under-represented demographics in the tech-industry with education, staffing and training opportunities.
 
-The *ClearView* program aims to harness AI to facilitate matches between candidates and job positions using anonymized resumes.
+The *ClearView* program aims to harness AI to facilitate matches between candidates and open roles using anonymized resumes.
 
 **Key Objectives:**
 
@@ -121,7 +121,7 @@ An interaction of the Containers and Components is documented in the Use Case: [
 The current architecture has the following limitations:
 
 - **Matching Algorithm Limitations**:  
-  The matching algorithm utilizes a predefined set of human-readable features, as described in [ADR-011](/ADR/ADR-011-deterministic-matching.md). Defining these features comprehensively for all S.M.A.R.T stories and job positions can be challenging.
+  The matching algorithm utilizes a predefined set of human-readable features, as described in [ADR-011](/ADR/ADR-011-deterministic-matching.md). Defining these features comprehensively for all S.M.A.R.T stories and open roles can be challenging.
 
 - **Delayed Matching Process**:  
   Matching is executed as a periodic background process rather than in real-time, as detailed in [ADR-008](/ADR/ADR-008-ui-reactivity.md).
