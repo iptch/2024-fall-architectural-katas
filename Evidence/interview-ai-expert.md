@@ -1,6 +1,8 @@
 Questions for AI expert Dario R.
 ---
 
+TODO: Cleanup and move to requirements / research
+
 - What LLM solutions exist for enterprises?
   - They know: Azure, Google Cloud, OpenAI
 
@@ -8,7 +10,6 @@ Questions for AI expert Dario R.
   - On the solution design level it is very highly specialize knowledge. You pay either for mistakes
   that are made or for highly skilled and experienced proffessionals.
   - Prompt engineering is just a lot of trial error, not rocket science.
-  - 
   
 - How often do models/versions need to be updated and why?
 - What is the difference between context upload and training?
@@ -18,7 +19,7 @@ Questions for AI expert Dario R.
   - Temperature setting: Can be minimized. To 0 - Engineering 
   - Even if temperature 0, Ai the same, prompt the same, result may be the same.
   - Can lead to chaotic behavior.
-  - 
+  
 - What are the costs? 
   - Base (license, platform use, ...)
     - Pay as you go, pay per token.  - with token-rate limit. Their experience, 

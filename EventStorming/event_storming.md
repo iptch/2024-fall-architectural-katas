@@ -1,6 +1,7 @@
 # Event Storming Workshop
 
 ## Introduction
+TOOD: Add ADR-001
 
 In our recent workshop, we used Event Storming to explore and map out various domains within our business processes. The session focused on capturing and documenting the flow of events, actors, and interactions between systems. This document summarizes our outcomes and serves as a guide to understanding our approach.
 
@@ -11,6 +12,7 @@ In our recent workshop, we used Event Storming to explore and map out various do
 - **Clarify ambiguities**: Document open questions, decisions, problems, and solutions as they arose during the session.
 
 ## Workshop Outcomes
+TODO: Add sticky notes
 
 ### 1. **Actors**:
 
@@ -58,9 +60,9 @@ One key decision was to make the payment process synchronous, ensuring that paym
 
 ## Key Decisions
 
-- **Anonymized resumes**: Resumes are anonymized and referred to as "Stories" to ensure privacy.
-- **Synchronous Payment Process**: The payment process will be synchronous, allowing for real-time transaction processing.
-- **Candidate Status Flexibility**: Job candidates can decide not to be hired, even if the system marks them as hired, providing greater flexibility in the hiring process.
+- **Anonymized resumes**: Resumes are anonymized and referred to as "Stories" to ensure privacy. TODO link to glossary and ADR-011
+- **Use adapters": TODO -> ADR-23, ADR-005
+- **Good understanding of requiremetns and addtionon of assumed and additional requirements**: TODO -> Link Requirements
 
 ## 1. Iteration
 

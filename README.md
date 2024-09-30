@@ -37,9 +37,14 @@ The *ClearView* program aims to harness AI to facilitate matches between candida
   
 - **Seamless HR Integration:** Implement a streamlined integration with employers' HR systems to ensure a smooth interview experience.
 
+## TLDR - How did we ?
+TODO James
+-> Mabye to the key objectives
 
 ## Requirements
-TODO
+- TODO James
+- TODO James Glossary 
+- TODO AI & 
 
 ## Event Storming
 We used [Event Storming](./EventStorming/event_storming.md) to explore and map out various domains within our business processes. The session focused on capturing and documenting the flow of events, actors, and interactions between systems. This document summarizes our outcomes and serves as a guide to understanding our approach.
@@ -68,6 +73,8 @@ By utilizing the [C4](https://c4model.com/) approach to visualize software archi
 ###  Context diagram (C1)
 The context view allows us to get a first grasp of the actors and the external components interacting with the ClearView system.
 
+TODO Tobi: Add AI System, billing system
+
 ![Context diagram  (C1)](/C4/images/C1-Context.png)
 
 The full Context diagram with the description of the Actors and Systems can be found [here](/C4/C1-context.md).
@@ -76,6 +83,8 @@ The full Context diagram with the description of the Actors and Systems can be f
 ### Container diagram (C2)
 The Container diagram shows the high-level shape of the software architecture and how responsibilities are distributed across it. 
 It also shows how the containers communicate with each another. 
+
+TODO Tobi: Add billing system
 
 ![Container diagram (C2)](/C4/images/C2-Container.png)
 
@@ -89,9 +98,14 @@ To address the main challenges of this system, we created a components diagram:
 - TODO -> Stefano AI -> testability
 
 ## Usecases
-TODO (Sequence diagram)
+TODO Tobias (Sequence diagram)
 
 ## Known Limitations
+TODO: Tobi
+-> Predefined set of features (ADR-11)
+-> Delayed matching -> ADR-008
+-> AI services are independent, rate limiting (ADR-007)
+-> User Administration is not yet a part of the UI and has to be done through UI access (dependent on ADR-022) and dependent on the IdP of Diversity Cyber Council
 
 ## Diagrams
 

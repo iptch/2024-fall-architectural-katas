@@ -30,7 +30,7 @@ This service is implemented as a separate microservice, as described in [ADR-009
 Since the interoperability with multiple HR systems is a main challenge of this system a [C3 HR Integration Components](C4/C3-components-hr-integration.md) was created.
 
 ### Analytics
-- **Data Gathering**: Read-only access to databases and topics for:
+- **Data Gathering**: Read-only access to databases and topics, as described in [ADR-019](/ADR/ADR-019-data-transmission-for-analytics.md), for:
   - Match statuses (unlocked, passed, hired)
   - Survey results
   - Demographic data of job candidates

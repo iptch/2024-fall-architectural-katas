@@ -6,6 +6,12 @@ In this C3 diagram, we illustrate how different components within the matching s
 
 The **Matching System** manages the processes of saving stories and roles, rating them using AI, and matching stories to roles.
 
+TODO: Add actors -> CRUD on matching directly
+TODO: Move db outside,  direct access through db
+TODO: Maybe rename story and role -> Rating Service rename to Scoring Service
+TODO: Scoring not AI, Feature extraction AI -> ADR-011
+TODO: MAybe seperate Feature extraction
+
 ![Components Diagram (C3) - Story Processing](/C4/images/C3-components-matching.png)
 
 ### Story Saving
@@ -21,6 +27,8 @@ The **Matching System** manages the processes of saving stories and roles, ratin
 3. The **Role Component** stores the role in the **Database**.
 
 ### Story Rating
+
+TODO: Add scheduling (clock)
 
 1. The **Story Container** checks for stories without a rating.
 2. If unrated stories are found, they are sent to the **AI Rating Adapter**.
@@ -39,6 +47,7 @@ The **Matching System** manages the processes of saving stories and roles, ratin
 6. The **Role Container** writes the ratings to the **Database**.
 
 ### Create Match
+TODO: Add scheduling (clock)
 
 1. The **Match Engine** periodically checks for new stories and roles.
 2. If new or unmatched stories and roles are found, the **Match Engine** compares the unrated or unmatched stories with open roles.
