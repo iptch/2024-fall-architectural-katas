@@ -20,5 +20,7 @@ The persons were derived from the Actors discovered in the [EventStorming](/Even
 ## Software Systems
 - **ClearView**: The system under development.
 - **HR System**: Various HR platforms, such as *SAP SuccessFactors*, *Workday*, and others.
+- **AI System**: The various AI models used for generating resume tips, company information, S.M.A.R.T stories, ..
+- **Blling System**: An external billing system responsible for payments, invoicing and billing.
 - **Mail Server**: An external mail server used to send system notifications and reports.
 - **Survey System**: An external service, such as SurveyMonkey, used for creating and managing surveys. [ADR-18](/ADR/ADR-018-location-of-survey-triggers.md) & [ADR-20](/ADR/ADR-020-externalizing-survey-processes.md).

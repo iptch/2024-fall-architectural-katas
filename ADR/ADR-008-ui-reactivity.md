@@ -9,11 +9,12 @@ Accepted
 ## Context:
 
 For [Q26](/Requirements/requirements-and-assumptions.md), we need to ensure a responsive UI.
-Some calls, especially external ones, may be long running and lead to a delay in the UI.
+Some calls, especially external ones, may be long running or costly and lead to a delay in the UI.
 
 ## Decision:
-Whenever the UI triggers long-running calls, they need to be decoupled from the long running threads.
-We do this using queues, making them asynchronous calls.
+- Whenever the UI triggers long-running calls, they need to be decoupled from the long running threads.
+- We do this using queues, making them asynchronous calls.
+- Costly operations like matching should run periodically in the background.
 
 ## Consequences:
 The UI design to consider failures and failure messaging to the user more carefully.
