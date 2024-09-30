@@ -30,5 +30,5 @@ TODO: James
 
 ## Consequences:
 
-- Service-Based Architecture is comparatively easier to maintain
-- Evenstreaming adds complexity, but enabled additional decoupling of capabilities
+- Service-Based Architecture is comparatively cheaper and faster to build and easier to maintain
+- Event streaming adds complexity, but enables additional decoupling of capabilities

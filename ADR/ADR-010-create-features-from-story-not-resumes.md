@@ -1,4 +1,4 @@
-# ADR-010: Create features from story, not resumes TODO limit access to resumes
+# ADR-010: Create features from story, not resumes
 
 ## Date:
 2024-09-26

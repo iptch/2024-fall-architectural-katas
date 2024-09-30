@@ -1,9 +1,7 @@
 Interview with AI expert
 ---
 
-Many thanks to our AI expert, Dario Röthlisberger, 
-[Linkedin](https://www.linkedin.com/in/dario-r%C3%B6thlisberger-87086345/), 
-for taking his time and provide us with insights and context from the world of LLMs.
+Many thanks to our AI expert for taking his time and provide us with insights and context from the world of LLMs.
 The documentation below is not word for word, but paraphrased and summarized.
 If leads to many [assumptions and requirements](/Requirements/requirements-and-assumptions.md) in the AI context.
 

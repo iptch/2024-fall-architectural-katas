@@ -57,6 +57,10 @@ The *ClearView* program aims to harness AI to facilitate matches between candida
 ## Event Storming
 We used [Event Storming](./EventStorming/event_storming.md) to explore and map out various domains within our business processes. The session focused on capturing and documenting the flow of events, actors, and interactions between systems. This document summarizes our outcomes and serves as a guide to understanding our approach.
 
+## Glossary
+
+The [glossary](/Requirements/glossary.md) defines terms we use.
+
 ## Requirements
 
 Based on the problem description, our [Event Storming](./EventStorming/event_storming.md), and research, we compiled a list of [functional

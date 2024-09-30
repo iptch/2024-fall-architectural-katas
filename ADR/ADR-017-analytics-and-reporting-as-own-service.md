@@ -48,4 +48,4 @@ could be included in the service or only need access to this service)
 
 ### Weakened characteristics:
 - Adaptability
-- Security (access to all data TODO)
+- Security (access to all data containers while also maintaining an external connection)

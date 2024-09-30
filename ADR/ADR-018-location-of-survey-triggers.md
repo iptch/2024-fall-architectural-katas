@@ -22,7 +22,7 @@ Options:
 - B: The creation of emails, trigger of survey system moved to employer and candidate service.
  From the perspective of DDD this is still a good choice, since the communication data (email addresses)
 of the users do not need to leave their services. Survey data if then fetched from the external survey system
-by the Analytics and Report system. (Added with ADR-020)
+by the Analytics and Report system. (Added with [(ADR-020)](/ADR/ADR-020-externalizing-survey-processes.md))
 
 ## Decision:
 

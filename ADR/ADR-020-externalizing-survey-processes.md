@@ -9,7 +9,7 @@ Accepted
 ## Context:
 Survey process is externalized by the use of SurveyMonkey or similar.
 Existing cheap solutions exist already.
-Trigger is explained in ADR-018.
+Trigger is explained in [(ADR-018)](/ADR/ADR-018-location-of-survey-triggers.md).
 Survey data if fetched from the external survey system
 by the Analytics and Report system.
 

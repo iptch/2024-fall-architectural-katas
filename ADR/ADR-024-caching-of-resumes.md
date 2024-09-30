@@ -8,7 +8,7 @@ Denied
 
 ## Context:
 
-With the dead-letter-queue from ADR-024, failing transmissions will be retried periodically.
+With the dead-letter-queue from [(ADR-024)](/ADR/ADR-024-caching-of-resumes.md), failing transmissions will be retried periodically.
 For every transmission attempt, the resume is fetched anew from the candidate service.
 The contents of these resumes could be cached in the HR adapter service to reduce load in our system.
 

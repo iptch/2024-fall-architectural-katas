@@ -8,7 +8,7 @@ Accepted
 
 ## Context:
 
-ADR-014 may quickly lead to chaotic coupling. We introduce the additional rule:
+[(ADR-014)](/ADR/ADR-014-multiple-services-on-same-database.md) may quickly lead to chaotic coupling. We introduce the additional rule:
 
 ## Decision:
 - For each object in a DB only one service has the right to write to the database.
