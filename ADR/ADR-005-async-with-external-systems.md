@@ -15,3 +15,4 @@ We want to send data to external systems through asynchronous operations. Unavai
 ## Consequences:
 - 3rd Party system need to have asynchronous interfaces or:
 - A retry mechanism is needed
+- Improved interoperability

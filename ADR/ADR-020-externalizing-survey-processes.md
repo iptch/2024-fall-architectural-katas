@@ -22,6 +22,7 @@ Survey process is externalized by the use of SurveyMonkey or similar.
 - Cost (no new services, use of existing cheap external solution)
 - Simplicity
 - Agility
+- Interoperability
 
 ### Weakened characteristics:
 - Fault-tolerance (another external service)

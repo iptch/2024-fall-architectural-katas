@@ -97,11 +97,17 @@ These driving characteristics significantly influenced our ADRs. The following A
 TOP 3 driving characteristics:
 
 - interoperability
-    - ADR TODO
+  - [ADR-005](/ADR/ADR-005-async-with-external-systems.md)
+  - [ADR-007](/ADR/ADR-007-use-of-external-llms.md)
+  - [ADR-023](/ADR/ADR-023-adapters-for-hr-systems.md)
 - feasibility
-    - ADR TODO
+  - [ADR-002](/ADR/ADR-002-architecture-style.md)
+  - [ADR-007](/ADR/ADR-007-use-of-external-llms.md)
+  - [ADR-011](/ADR/ADR-011-deterministic-matching.md)
 - testability
-    - ADR TODO
+  - [ADR-002](/ADR/ADR-002-architecture-style.md)
+  - [ADR-011](/ADR/ADR-011-deterministic-matching.md)
+  - [ADR-025](/ADR/ADR-025-ai-test-concept.md)
 
 ## Architecture style
 

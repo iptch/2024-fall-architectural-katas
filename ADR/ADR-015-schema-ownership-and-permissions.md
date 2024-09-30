@@ -19,12 +19,10 @@ Accepted
 - Documentation effort for schema ownerships
 - Configuration effort for DB permissions
 
-
-
 ### Strengthened characteristics:
 - Maintainability
+- Adaptability
 - Data integrity
 - Testability
 
 ### Weakened characteristics:
-- Adaptability

@@ -42,7 +42,7 @@ We discussed three propositions:
 ## Decision
 
 - Proposition A: We use external LLMs
-- We need additional fault-tolerance and interoperability: we us a event-driven design for every LLM client in the system:
+- We need additional fault-tolerance and interoperability: we use a event-driven design for every LLM client in the system.
 
 ## Consequences:
 
@@ -54,9 +54,9 @@ We discussed three propositions:
 
 - Cost (especially due to tendency to become cheaper)
 - Feasibility (less hardware, staff, talent required. Ability to use latest LLMs)
-- Interoperability (due to the decided design)
-- Fault-tolerance (due to the decided design)
-- Availability (cloud providers are hard to beat)
+- Interoperability (due to the chosen design)
+- Fault-tolerance (due to the chosen design)
+- Availability (cloud providers SLA)
 
 ### Weakened characteristics:
 
