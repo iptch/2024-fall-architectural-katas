@@ -128,7 +128,7 @@ components in greater detail.
 The context view allows us to get a first grasp of the actors and the external components interacting with the ClearView
 system.
 
-![Context diagram  (C1)](/C4/images/C1-Context.png)
+![Context diagram (C1)](/C4/images/C1-Context.png)
 
 The full Context diagram with the description of the Actors and Systems can be found [here](/C4/C1-context.md).
 
@@ -147,9 +147,11 @@ found [here](/C4/C2-container.md).
 
 To address the main challenges of this system, we created a components diagram:
 
-- **[HR Integration Components](/C4/C3-components-hr-integration.md)**: This diagram illustrates how we integrate *
-  *Interoperability** and **Fault Tolerance** into our architecture.
-- TODO -> Stefano AI -> testability
+- **[Job Candidate Components](/C4/C3-components-job-candidate.md)**: This diagram illustrates how we integrate **TODO STA** and **TODO STA** into our architecture.
+- **[Story Components](/C4/C3-components-story.md)**: This diagram illustrates how we integrate **TODO STA** and **TODO STA** into our architecture.
+- **[Matching Components](/C4/C3-components-matching.md)**: This diagram illustrates how we integrate **TODO STA** and **TODO STA** into our architecture.
+- **[HR Integration Components](/C4/C3-components-hr-integration.md)**: This diagram illustrates how we integrate **Interoperability** and **Fault Tolerance** into our architecture.
+
 
 An interaction of the Containers and Components is documented in the Use
 Case: [Upload and Publish a Resume](/UseCases/use-case-upload-a-resume.md)

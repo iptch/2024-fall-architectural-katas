@@ -1,32 +1,35 @@
 # Components Diagram (C3) - Story
 
-In the C4 model, the C3 diagrams highlight how the components within a container operate and interact.
-
-For the Story Processing container, we want to show how we incorporate the characteristics of *automation* and *data anonymization*.
+In the C4 model, the C3 diagrams highlight how components within a container operate and interact. For the **Story Processing** container, we focus on the incorporation of **automation** and **data anonymization**, ensuring secure and efficient handling of job candidate data.
 
 ### Story Processing Overview
 
 - **AI-Driven Automation**  
-  The story processing pipeline leverages AI-based adapters to automate the rating and anonymization of job candidate resumes, as described in [ADR-006 AI Models run on separate containers](/ADR/ADR-006-ai-models-run-on-separate-containers.md). The process ensures consistency and efficiency in the handling of candidate data.
+  The story processing pipeline leverages AI-based adapters to automate the rating and anonymization of candidate resumes, as detailed in [ADR-006: AI Models run on separate containers](ADR/ADR-006-ai-models-run-on-separate-containers.md). This ensures consistency, scalability, and efficiency in processing and anonymizing data.
+
+- **Asynchronous Event Handling**  
+  The system operates asynchronously, using events to process stories, ensuring decoupling between services, as described in [ADR-005: Asynchronous Communication with External Systems](ADR/ADR-005-async-with-external-systems.md).
+
+- **Deterministic Processing**  
+  The anonymization and rating processes follow deterministic logic to ensure predictable and reliable results, as described in [ADR-011: Deterministic Matching](ADR/ADR-011-deterministic-matching.md).
 
 ![Components Diagram (C3) - Story Processing](/C4/images/C3-components-story.png)
 
-TODO: Asynchronous to adapter
 
 ## Data flow
 
 ### Sending a Resume for Story
 
-1. The **Candidate** container submits a resume through the system interface.
-2. The resume is sent to the **Story API**.
-3. The **Story API** forwards it to the **Resume Service**.
-4. The **Resume Service** forwards it to the **AI Anonymize Adapter**.
-5. The **AI Anonymize Adapter** sends it to the **AI Anonymize System**.
+1. The **Candidate** submits, which communicates with the **Story API**.
+2. The **Story API** forwards the resume to the **Resume Service**.
+3. The **Resume Service** sends the resume to the **AI Anonymize Adapter** asynchronously.
+4. The **AI Anonymize Adapter** passes the resume to the **AI Anonymize System**, which runs on separate containers.
+5. The **AI Anonymize System** anonymizes the resume, ensuring that no personally identifiable information is stored.
 
 ### Storing the Story
 
 1. Once the **AI Anonymize System** anonymizes the resume, it returns the processed story to the **AI Anonymize Adapter**, which sends the story back to the **Resume Service**.
-2. The **Resume Service** (or **Story Processor**) stores the anonymized story directly in the **Matching Database** (or **Central Matching Database**) for further use in the matching process.
+2. The **Resume Service** stores the anonymized story directly in the **Shared Database**.
 3. In case of processing failures, the resume is queued for retry, ensuring no data is lost during the process.
 
 

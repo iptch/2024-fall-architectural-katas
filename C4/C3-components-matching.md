@@ -1,56 +1,40 @@
 # Components Diagram (C3) - Matching System
 
-In this C3 diagram, we illustrate how different components within the matching system interact to save and rate stories and roles, and how the system generates matches between them.
+In this C3 diagram, we explain how different components within the **Matching System** interact. The system manages saving stories and roles, extracting AI-based features, and generating matches between them. Due to the large size of the UI, it is not represented in this data flow. However, all interactions by **Job Candidates** and **Employers** happen through the UI, which communicates with the **Matching API**.
 
-## Matching System Overview
+### Matching System Overview
 
-The **Matching System** manages the processes of saving stories and roles, rating them using AI, and matching stories to roles.
-
-TODO: Add actors -> CRUD on matching directly
-TODO: Move db outside,  direct access through db
-TODO: Maybe rename story and role -> Rating Service rename to Scoring Service
-TODO: Scoring not AI, Feature extraction AI -> ADR-011
-TODO: MAybe seperate Feature extraction
+The **Matching System** facilitates saving stories and roles, rating them using AI, and matching them. It uses asynchronous processes, AI feature extraction, and periodic checks for new or unmatched stories and roles.
 
 ![Components Diagram (C3) - Story Processing](/C4/images/C3-components-matching.png)
 
-### Story Saving
+## Data Flow
 
-1. The **Story Container** sends the story data to the **Matching API**.
-2. The **Matching API** forwards the story to the **Story Component**.
-3. The **Story Component** stores the story in the **Database**.
+### Reading the Match Status
 
-### Role Saving
+1. **Job Candidate** or **Employer** requests the match status via the **Matching API**.
+2. The **Matching API** retrieves the match status from the **Match Service**.
+3. The **Match Service** reads the relevant data from the **Shared Database**.
+4. The **Matching API** sends the result back to the **Job Candidate** or **Employer**.
 
-1. The **Employer Container** sends role data to the **Matching API**.
-2. The **Matching API** forwards the role to the **Role Component**.
-3. The **Role Component** stores the role in the **Database**.
+### Updating the Match State
 
-### Story Rating
+1. **Job Candidate** or **Employer** submits an update request for a match state via the **Matching API**.
+2. The **Matching API** forwards the request to the **Match Service**.
+3. The **Match Service** writes the updated state to the **Shared Database**.
+4. A confirmation is sent back through the **Matching API** to the **Job Candidate** or **Employer**.
 
-TODO: Add scheduling (clock)
+### Periodic Feature Extraction
 
-1. The **Story Container** checks for stories without a rating.
-2. If unrated stories are found, they are sent to the **AI Rating Adapter**.
-3. The **AI Rating Adapter** sends the stories to the **AI Rating System**.
-4. The **AI Rating System** returns the ratings to the **AI Rating Adapter**.
-5. The **AI Rating Adapter** passes the ratings back to the **Story Container**.
-6. The **Story Container** writes the ratings to the **Database**.
+1. The **Feature Extractor** periodically checks the **Shared Database** for **open roles** or **stories** without a rating.
+2. The **Feature Extractor** sends the unrated stories or roles to the **AI Feature Extraction Adapter** (asynchronously).
+3. The **AI Feature Extraction Adapter** forwards the request to the **AI Feature Extraction** service (external, asynchronous).
+4. The **AI Feature Extraction** service processes the story or role and sends the extracted features back to the **AI Feature Extraction Adapter**.
+5. The **AI Feature Extraction Adapter** forwards the features to the **Feature Extractor**, which writes them to the **Shared Database**.
 
-### Role Rating
+### Match Creation Process
 
-1. The **Role Container** checks for roles without a rating.
-2. If unrated roles are found, they are sent to the **AI Rating Adapter**.
-3. The **AI Rating Adapter** sends the roles to the **AI Rating System**.
-4. The **AI Rating System** returns the ratings to the **AI Rating Adapter**.
-5. The **AI Rating Adapter** passes the ratings back to the **Role Container**.
-6. The **Role Container** writes the ratings to the **Database**.
-
-### Create Match
-TODO: Add scheduling (clock)
-
-1. The **Match Engine** periodically checks for new stories and roles.
-2. If new or unmatched stories and roles are found, the **Match Engine** compares the unrated or unmatched stories with open roles.
-3. If a match is found, the **Match Engine** stores the match in the **Database**.
-4. The **Match Engine** notifies the **Matches Publisher**.
-5. The **Matches Publisher** sends a notification to the **Match Topic Queue**.
+1. The **Match Creator** periodically checks the **Shared Database** for combinations of **open roles** and **stories** that haven't been evaluated.
+2. The **Match Creator** analyzes the combinations and searches for potential matches.
+3. If a match is found, the **Matches Publisher** is notified.
+4. The **Matches Publisher** sends the match information to the **Match Topic Queue** for further processing.
