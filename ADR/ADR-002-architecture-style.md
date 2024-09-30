@@ -26,8 +26,6 @@ Eventdriven Architecture.
 Although the microkernel architecture was considered, its limitations in scalability and fault-tolerance two of our
 top [7 driving characteristics](../ArchitectureCharacteristics/Characteristics.md) led us to pursue a different option.
 
-TODO: James
-
 ## Consequences:
 
 - Service-Based Architecture is comparatively cheaper and faster to build and easier to maintain
