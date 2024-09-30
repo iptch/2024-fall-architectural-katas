@@ -9,7 +9,7 @@ Accepted
 ## Context:
 
 For R21, the design of HR systems needs to be considered.
-ADR-008 and ADR-016 already implies a decoupling from the UI based processes,
+[ADR-008](/ADR/ADR-008-ui-reactivity.md) and [ADR-016](/ADR/ADR-016-matches-published-as-events.md) already implies a decoupling from the UI based processes,
 but the potentially very large number of different HR systems require 
 additional measured to ensure additional fault-tolerance.
 Q16 indicates, that we need to cater for thousands of different configurations.

@@ -1,7 +1,7 @@
 # ADR-000: ADR template
 
 ## Date:
-2024-09-24
+2024-xx-xx
 
 ## Status:
 Accepted / Proposed / Superseded

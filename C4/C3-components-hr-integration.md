@@ -13,7 +13,7 @@ For the HR Integration container we want to show how we incorporate the characte
    For each HR system (e.g., SAP SuccessFactors, Workday), a dedicated adapter is developed, as outlined in [ADR-023](/ADR/ADR-023-adapters-for-hr-systems.md). These adapters operate in multiple threads and run asynchronously to handle different HR systems concurrently.
 
 -  **Fault Tolerance and Reliability**  
-   To ensure a fault-tolerant integration, a retry mechanism is implemented using dead-letter queues with an exponential backoff strategy. This setup guarantees message reprocessing in case of transient failures and prevents data loss.
+   To ensure a fault-tolerant integration, a retry mechanism is implemented using dead-letter queues with an exponential backoff strategy, as described in [ADR-023](/ADR/ADR-023-adapters-for-hr-systems.md). This setup guarantees message reprocessing in case of transient failures and prevents data loss.
 
 ![Components Diagram (C3) - HR Integration](/C4/images/C3-components-hr-integration.png)
 

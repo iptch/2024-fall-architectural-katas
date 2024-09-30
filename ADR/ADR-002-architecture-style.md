@@ -6,12 +6,14 @@
 
 ## Status:
 
-Proposed
+Accepted
 
 ## Context:
 
 The style of the architecture is the cornerstone of a succesfull software project. Depending on the style, additional
 decisions like databases, communication patterns, ... can be derived.
+
+Needs [ADR-004](/ADR/ADR-004-data-integrity-downplayed.md) for the decision.
 
 ## Decision:
 

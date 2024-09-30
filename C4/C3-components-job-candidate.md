@@ -11,6 +11,8 @@ For the **Job Candidate Management** container, we want to outline how candidate
 
 ![Components Diagram (C3) - Job Candidate](/C4/images/C3-components-job-candidate.png)
 
+TODO: DB outside?
+
 ## Data Flow
 
 ### Requesting AI Resume Tips
@@ -29,6 +31,7 @@ For the **Job Candidate Management** container, we want to outline how candidate
 2. The **Candidate API** forwards the resume to the **Resume Service**.
 3. The **Resume Service** sends the resume to the **Story Container**.
 4. The **Story Container** handles the anonymization of the resume data.
+TODO -> Is there a anonymized resume stored in the resume service?
 5. Once anonymized, the **Story Container** returns the anonymized resume to the **Resume Service**.
 6. The **Resume Service** stores the anonymized resume in the **Job Candidate Database**.
 

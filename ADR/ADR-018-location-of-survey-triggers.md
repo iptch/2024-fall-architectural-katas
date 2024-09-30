@@ -15,7 +15,7 @@ The persistence of survey results is needed for reporting purposes.
 However, the trigger for sending out surveys would fit inside a survey domain.
 
 Triggering of surveys could also be included in the Analytics & Reporting service, 
-but ADR-017 decided to keep operational processes out of this service.
+but [ADR-017](/ADR/ADR-017-analytics-and-reporting-as-own-service.md) decided to keep operational processes out of this service.
 
 Options:
 - A: A new service 'Surveys' for triggering surveys. The communication data for users would need to be gathered or stored.

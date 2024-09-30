@@ -11,6 +11,7 @@ With synchronous communication, the whole system is strongly coupled leading to 
 We mitigate this by creating a event-queue to allow for asynchronous communication between these use cases.
 
 ## Decision:
+TODO: Add decision
 
 ## Consequences:
 - Technology decision: shared queues / event streaming
