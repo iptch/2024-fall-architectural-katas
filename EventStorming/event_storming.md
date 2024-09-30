@@ -15,28 +15,28 @@ In our recent workshop, we used Event Storming to explore and map out various do
 TODO: Add sticky notes
 
 ### 1. **Actors**:
-
+![Actor](/EventStorming/assets/actor.png)
 - We identified the main actors involved in each process. Actors are the individuals or systems that initiate commands and trigger domain events.
 - Examples include customers, internal users, external services, and job candidates.
 
 ### 2. **Commands**:
-
+![Commands](/EventStorming/assets/command.png)
 - Commands represent actions initiated by actors. We captured the key commands that drive the business process, such as placing an order, submitting a payment, or updating job application status.
 - A specific point discussed was allowing job candidates to declare that they do not wish to be hired, even if they have been marked as "hired" within the system.
 
 ### 3. **Domain Events**:
-
+![Domain Events](/EventStorming/assets/domain_events.png)
 - Domain events describe significant occurrences in the business process, such as "Order Placed", "Payment Processed", or "Candidate Hired".
 - We also anonymized resumes in our system by referring to them as "Stories" for privacy and compliance reasons.
 - The events were organized in chronological order to display the flow of the business process.
 
 ### 4. **External Systems**:
-
+![External Systems](/EventStorming/assets/external_system.png)
 - We noted the external systems that interact with our business processes, such as payment gateways, third-party services, or databases.
 - These systems were documented to show how and where they interface with the internal process.
 
 ### 5. **Uncertainties and Decisions**:
-
+![Uncertainties and Decisions](/EventStorming/assets/QA.png)
 - As we mapped the workflow, we documented any open questions, problems, or decision points in a structured manner:
   - **Questions**: Areas requiring further clarification.
   - **Problems**: Issues or roadblocks encountered.
@@ -60,9 +60,9 @@ One key decision was to make the payment process synchronous, ensuring that paym
 
 ## Key Decisions
 
-- **Anonymized resumes**: Resumes are anonymized and referred to as "Stories" to ensure privacy. TODO link to glossary and ADR-011
-- **Use adapters**: TODO -> ADR-23, ADR-005
-- **Good understanding of requiremetns and addtionon of assumed and additional requirements**: TODO -> Link Requirements
+- **Anonymized resumes**: Resumes are anonymized and referred to as "Stories" to ensure privacy. [ADR-011: Deterministic Matching](/ADR/ADR-011-deterministic-matching.md)
+- **Use adapters**: Integration with external systems is handled via adapters and asynchronous communication. [ADR-023: Adapters for HR Systems](/ADR/ADR-023-adapters-for-hr-systems.md), [ADR-005: Asynchronous Communication with External Systems](/ADR/ADR-005-async-with-external-systems.md)
+- **Great understanding of requirements**: Ensure a solid requirements, assumptions, and considerations. [Requirements](/Requirements/requirements-and-assumptions.md)
 
 ## 1. Iteration
 
