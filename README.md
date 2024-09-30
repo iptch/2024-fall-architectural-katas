@@ -121,7 +121,7 @@ An interaction of the Containers and Components is documented in the Use Case: [
 The current architecture has the following limitations:
 
 - **Matching Algorithm Limitations**:  
-  The matching algorithm utilizes a predefined set of human-readable features, as described in [ADR-011](/ADR/ADR-011-matching-based-on-ai-or-deterministic-methods.md). Defining these features comprehensively for all S.M.A.R.T stories and job positions can be challenging.
+  The matching algorithm utilizes a predefined set of human-readable features, as described in [ADR-011](/ADR/ADR-011-deterministic-matching.md). Defining these features comprehensively for all S.M.A.R.T stories and job positions can be challenging.
 
 - **Delayed Matching Process**:  
   Matching is executed as a periodic background process rather than in real-time, as detailed in [ADR-008](/ADR/ADR-008-ui-reactivity.md).
