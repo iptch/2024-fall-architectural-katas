@@ -44,7 +44,7 @@ resumes.
           and the corresponding [visualization](/C4/C3-components-matching.md)
         - Other architectural considerations, such as [ADR-006](/ADR/ADR-006-ai-models-run-on-separate-containers.md),
           [ADR-007](/ADR/ADR-007-use-of-external-llms.md)
-        - [ADR-025: AT test concept](/ADR/ADR-025-ai-test-concept.md)
+        - [ADR-025: AI test concept](/ADR/ADR-025-ai-test-concept.md)
 
 - **Analyze Hiring Disparities:** Utilize metrics and surveys to uncover disparities between selected candidates and
   those who were not hired.
