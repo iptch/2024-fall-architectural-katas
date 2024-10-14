@@ -31,7 +31,7 @@ For the HR Integration container we want to show how we incorporate the characte
 
 1. The **Matches Subscriber** monitors the ``Matches`` topic for any changes.
 2. When a match is unlocked, it triggers a call to the **HR System Orchestrator**.
-3. The **HR System Orchestrator** checks for one or more configured HR integrations for the employer, selects the appropriate adapter(s), and retrieves the candidate's resume.
+3. The **HR System Orchestrator** checks for one or more configured HR integrations for the employer, selects the appropriate adapter(s), and retrieves the job candidate's resume.
 4. The **HR System Orchestrator** then calls the selected adapter(s) asynchronously for the respective HR system(s).
 5. The **HR System Adapter** uploads the resume to the employer's HR system.
 6. In the event of a failure, the **HR System Orchestrator** pushes the upload request to a dead-letter queue, where it is retried using an exponential backoff strategy. If failures persist, requests are escalated to a higher retry queue until no further attempts are made.

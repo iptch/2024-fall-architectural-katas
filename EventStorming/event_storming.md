@@ -24,7 +24,7 @@ In our recent workshop, we used Event Storming decided in [ADR-001](/ADR/ADR-001
 
 ### 3. **Domain Events**:
 ![Domain Events](/EventStorming/assets/domain_events.png)
-- Domain events describe significant occurrences in the business process, such as "Order Placed", "Payment Processed", or "Candidate Hired".
+- Domain events describe significant occurrences in the business process, such as "Order Placed", "Payment Processed", or "Job candidate Hired".
 - We also anonymized resumes in our system by referring to them as "Stories" for privacy and compliance reasons.
 - The events were organized in chronological order to display the flow of the business process.
 

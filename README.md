@@ -28,7 +28,7 @@ A (hopefully) pragmatic approach to the O'Reilly Autumn Architectural Kata 2024
 The [Diversity Cyber Council](https://www.diversitycybercouncil.com/) is a Non-Profit that helps under-represented
 demographics in the tech-industry with education, staffing and training opportunities.
 
-The *ClearView* program aims to harness AI to facilitate matches between candidates and open roles using anonymized
+The *ClearView* program aims to harness AI to facilitate matches between job candidates and open roles using anonymized
 resumes.
 
 **Key Objectives:**
@@ -46,7 +46,7 @@ resumes.
           [ADR-007](/ADR/ADR-007-use-of-external-llms.md)
         - [ADR-025: AI test concept](/ADR/ADR-025-ai-test-concept.md)
 
-- **Analyze Hiring Disparities:** Utilize metrics and surveys to uncover disparities between selected candidates and
+- **Analyze Hiring Disparities:** Utilize metrics and surveys to uncover disparities between selected job candidates and
   those who were not hired.
     - Our main contributions for this objective are design decisions such as:
         - [ADR-003](/ADR/ADR-003-batch-for-analytics.md)

@@ -9,7 +9,7 @@ Denied
 ## Context:
 
 With the dead-letter-queue from [(ADR-024)](/ADR/ADR-024-caching-of-resumes.md), failing transmissions will be retried periodically.
-For every transmission attempt, the resume is fetched anew from the candidate service.
+For every transmission attempt, the resume is fetched anew from the job candidate service.
 The contents of these resumes could be cached in the HR adapter service to reduce load in our system.
 
 However, we can assume that when an external system is not reachable, the delivery is not time sensitive anymore.
@@ -22,4 +22,4 @@ and require more (potentially expensive) memory.
 ## Decision:
 
 Denied, we prefer the load over the memory cost.
-Should the load on Candidate service ever be a bottleneck, the ADR should be considered again.
+Should the load on Job candidate service ever be a bottleneck, the ADR should be considered again.

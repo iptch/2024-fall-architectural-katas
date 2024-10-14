@@ -11,9 +11,9 @@ Superceded by [ADR-007](/ADR/ADR-007-use-of-external-llms.md)
 ## Context:
 
 The runtime of AI or machine learning models, such as LLMs, require a high amount of memory, CPU,
-and potentially specialized CPU hardware, compared to caller services such as 'Employer' and 'Candidate'.
+and potentially specialized CPU hardware, compared to caller services such as 'Employer' and 'Job candidate'.
 
-We expect the traffic pattern of domain services such as 'Employer', 'Candidate' to be very different from AI
+We expect the traffic pattern of domain services such as 'Employer', 'Job candidate' to be very different from AI
 functionality, since AI
 is only used for a small subset of functionality. The scalability needs are therefore different.
 If a Domain service would scale horizontally due to heavy traffic, and AI model were included in the runtime, 

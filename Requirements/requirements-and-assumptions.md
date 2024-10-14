@@ -14,26 +14,26 @@ Also consider the research:
 ## Functional requirements
 
 ### Given and implied
-- R1: Candidate can create an account (register)
-- R2: Candidate can upload a resume (register)
-- R3: Candidate can receive tips on their uploaded resume
-- R4: Candidate can submit their resume, entering it to the matching process
-- R5: Candidate can view matches between their resume and open roles
-- R6: Candidate can pull back their resume, removing it from the matching process
+- R1: Job candidate can create an account (register)
+- R2: Job candidate can upload a resume (register)
+- R3: Job candidate can receive tips on their uploaded resume
+- R4: Job candidate can submit their resume, entering it to the matching process
+- R5: Job candidate can view matches between their resume and open roles
+- R6: Job candidate can pull back their resume, removing it from the matching process
 - R7: Employer can create an account (register) 
 - R8: Employer can enter and edit company information such as communication channels, legal and billing
 - R9: Employer receives automated help (f.ex. autofill) when entering company information
 - R10: Employer can enter, edit and remove open job descriptions
 - R12: A story, which is an anonymized version of a resume, is created from a submitted resume
 - R13: Employer can read the stories of resumes that match with their open roles.
-- R14: Candidates can view matches and read corresponding open roles and employers.
-- R15: Employer can unlock the candidate of a match to receive their resume \ full profile (Data Point 2)
-- R16: Employer is billed for unlocking a candidate.
-- R17: Employer may mark a candidate as hired, or pass on a candidate (Data Point 1)
+- R14: Job candidates can view matches and read corresponding open roles and employers.
+- R15: Employer can unlock the job candidate of a match to receive their resume \ full profile (Data Point 2)
+- R16: Employer is billed for unlocking a job candidate.
+- R17: Employer may mark a job candidate as hired, or pass on a job candidate (Data Point 1)
 - R18: Employer is asked to complete a 5-question survey about an unlocked employee (Data point 4)
-- R19: Candidate is asked to complete a 5-question survey about the open position and employer of an unlocked match
+- R19: Job candidate is asked to complete a 5-question survey about the open position and employer of an unlocked match
   (Data Point 3)
-- R20: Candidate can view open roles and employer information of their resume's matches
+- R20: Job candidate can view open roles and employer information of their resume's matches
 - R21: An unlocked resume can be transferred to the registered HR system
 - R22: Employer can configure HR system for their account (see also R26 & R27)
 - R28: Employer receives a monthly report with analyses based on the defined 'Data Points' and further KPIs or metrics
@@ -44,8 +44,8 @@ Also consider the research:
 ### Assumed
 - R11, based on A1: Employer can open accounts for hiring managers.
 - R23: based on A1: A hiring manager has access to a subset of an employers open roles and their matches
-- R24: based on A3: Candidate can delete their resume from the platform
-- R25: based on A12: The candidate must be able to confirm or deny their hired status
+- R24: based on A3: Job candidate can delete their resume from the platform
+- R25: based on A12: The job candidate must be able to confirm or deny their hired status
 - R26, based on A4: An employer can configure several HR systems for transfer
 - R27, based on A5: An employer can receive a resume without the configuration of an HR system (f. ex. Email or Download-Link)
 - R29: Admin can manually add findings to reports such as statistics and evaluations, 
@@ -83,7 +83,7 @@ who are hired and those who were not selected.
 - A4: Some big employers maintain different HR systems for different branches, departments.
 - A5: Some small employers have no common HR system or none at all
 - A6: Hiring managers prefer a text about a person instead of stories must be human-readable and convey information 
-about a candidate
+about a job candidate
 - A7: Decisions made by AI are especially difficult to comprehend and justify.
 - A8, based on A7: Existing LLMs contain all kinds of biases, including those ClearView seeks to eliminate.
 - A9: A fair hiring process seeks to increase determinism and reduce arbitrariness. 
@@ -91,12 +91,12 @@ about a candidate
 quickly lead to different results.
 - A11: After an unlock, the hiring process will typically continue and conclude outside from ClearView.
 - A12: There are malicious or ambivalent employers
-- A13: There are malicious or ambivalent candidates
+- A13: There are malicious or ambivalent job candidates
 - A17: The upper bound of role openings per month in the US is 250'000, based on these statistics
 https://www.statista.com/statistics/200003/number-of-job-openings-in-the-us-information-sector/#:~:text=Number%20of%20monthly%20job%20openings%20in%20the%20U.S.%20information%20sector%202005%2D2023&text=As%20of%20May%202023%2C%20the,than%20in%20the%20previous%20years
-Assuming reaching a market share of 10%, we need to cater to 25'000 openings per month and around the same number of active candidates.
+Assuming reaching a market share of 10%, we need to cater to 25'000 openings per month and around the same number of active job candidates.
 - A18: The user interaction patterns with the platform are sparse (sporadic use) and with light data loads (mainly text).
-- A19: The candidate has a need to get information on their statistic
+- A19: The job candidate has a need to get information on their statistic
 - A20: Due to the quickly evolving AI market, existing LLMs are outmatched soon by future models.
 - A21: Specialized and therefore expensive know-how is required to design the use of LLMs in a platform such as ClearView.
 - A22: The transmission delays of answers from external LLMs can be very long. 60s are possible.

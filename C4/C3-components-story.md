@@ -5,7 +5,7 @@ In the C4 model, the C3 diagrams highlight how components within a container ope
 ### Story Processing Overview
 
 - **AI-Driven Automation**  
-  The story processing pipeline leverages AI-based adapters to automate the rating and anonymization of candidate resumes, as detailed in [ADR-006: AI Models run on separate containers](/ADR/ADR-006-ai-models-run-on-separate-containers.md). This ensures consistency, scalability, and efficiency in processing and anonymizing data.
+  The story processing pipeline leverages AI-based adapters to automate the rating and anonymization of job candidate resumes, as detailed in [ADR-006: AI Models run on separate containers](/ADR/ADR-006-ai-models-run-on-separate-containers.md). This ensures consistency, scalability, and efficiency in processing and anonymizing data.
 
 - **Asynchronous Event Handling**  
   The system operates asynchronously, using events to process stories, ensuring decoupling between services, as described in [ADR-005: Asynchronous Communication with External Systems](/ADR/ADR-005-async-with-external-systems.md).
@@ -20,7 +20,7 @@ In the C4 model, the C3 diagrams highlight how components within a container ope
 
 ### Sending a Resume for Story
 
-1. The **Candidate** submits, which communicates with the **Story API**.
+1. The **Job candidate** submits, which communicates with the **Story API**.
 2. The **Story API** forwards the resume to the **Resume Service**.
 3. The **Resume Service** sends the resume to the **AI Anonymize Adapter** asynchronously.
 4. The **AI Anonymize Adapter** passes the resume to the **AI Anonymize System**, which runs on separate containers.

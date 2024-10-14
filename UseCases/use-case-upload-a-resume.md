@@ -32,7 +32,7 @@ Additionally, the process triggers the creation of:
 
 7. When the Job Candidate revisits the page, they can view the resume tips.
 
-> Possible extension: Implement a mail-based notification to alert the candidate when resume tips are available.
+> Possible extension: Implement a mail-based notification to alert the job candidate when resume tips are available.
 
 
 ### Submit a resume

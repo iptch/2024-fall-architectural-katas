@@ -14,20 +14,20 @@ According to the service-based architecture [ADR-002](/ADR/ADR-002-architecture-
 - **Developing features** for the matching algorithm.
 
 ### Story Container
-- **Anonymize Resume**: Removes all personally identifiable information (PII) from the candidate's resume.
+- **Anonymize Resume**: Removes all personally identifiable information (PII) from the job candidate's resume.
 - **Generate S.M.A.R.T Stories**: Creates S.M.A.R.T (Specific, Measurable, Achievable, Relevant, Time-bound) stories from the anonymized resume.
 
 This service is implemented as a separate microservice, as described in [ADR-009](/ADR/ADR-009-creation-of-story-as-own-microservice.md).
 
 ### Matching Container
 - **Feature Extraction**: Generates quantitative, human-readable features ("spyders") from open roles and S.M.A.R.T stories ([ADR-010](/ADR/ADR-010-create-features-from-story-not-resumes.md)).
-- **Match Scoring**: Creates a match with a score between open roles and S.M.A.R.T stories using these features ([ADR-011](/ADR/ADR-011-deterministic-matching.md).
+- **Match Scoring**: Creates a match with a score between open roles and S.M.A.R.T stories using these features ([ADR-011](/ADR/ADR-011-deterministic-matching.md)).
 
 ### HR Integration
 - **Asynchronous Decoupling**: Integrates with external HR systems by asynchronously consuming the matches topic to enable interoperability.
 - **Resume Upload**: Uploads a resume to the employer's HR system when a match is unlocked.
 
-Since the interoperability with multiple HR systems is a main challenge of this system a [C3 HR Integration Components](C4/C3-components-hr-integration.md) was created.
+Since the interoperability with multiple HR systems is a main challenge of this system a [C3 HR Integration Components](/C4/C3-components-hr-integration.md) was created.
 
 ### Analytics
 - **Data Gathering**: Read-only access to databases and topics, as described in [ADR-019](/ADR/ADR-019-data-transmission-for-analytics.md), for:

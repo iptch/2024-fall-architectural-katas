@@ -13,7 +13,7 @@ through architecture by limiting the matching algorithms access to resumes.
 
 ## Decision:
 
-- Resumes are only persisted in the Candidate service, and access requires special privileges which
+- Resumes are only persisted in the Job candidate service, and access requires special privileges which
 are not given to the matching service.
 - The story service does
 

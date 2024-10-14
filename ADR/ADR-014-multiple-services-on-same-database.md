@@ -9,7 +9,7 @@ Accepted
 ## Context:
 
 Several services need the same objects, for example the object story is used by the services
-Candidate, Story, Matching and Employer.
+Job candidate, Story, Matching and Employer.
 Since we opted for a service-based architecture and not microservices, we have the possibility to allow several services
 to access the same DBs.
 

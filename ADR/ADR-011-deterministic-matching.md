@@ -23,7 +23,7 @@ We defined:
 - Spyder: Quantified distribution of personal skills, traits, experience across predefined axes. Human comprehensible.
 - Score: The result of comparing an open job with a representation of a resume.
 
-We considered several matching processes for candidates and roles. Some of these processes utilized vector-based features
+We considered several matching processes for job candidates and roles. Some of these processes utilized vector-based features
 that are highly effective for AI but unreadable by humans. The decision was made to use human-readable features to
 maintain better control over the AI and improve interpretability.
 ![Matching Process](./images/ADR-011-matching-process.png)
@@ -36,7 +36,7 @@ The options we considered were:
 [ADR-010](/ADR/ADR-010-create-features-from-story-not-resumes.md)
 - **D) Allowing AI to assess whether a story and role should match.
 - **E) Matching stories and roles using human-readable features and calculating a match score.
-- **F) Each role has its own features, and candidates are evaluated based on these, but this approach was too
+- **F) Each role has its own features, and job candidates are evaluated based on these, but this approach was too
   resource-intensive.
 
 We tested them against several criteria:
@@ -47,7 +47,7 @@ but quadratic for all others.
 - The asymptotic complexity with respect to the number of AI-prompts due to update operations (needed for Q15) on a resume or open role is
   significantly better for option B and A.
 - The asymptotic complexity is only relevant, if a large amount of open roles should be considered for a resume.
-However, if the number of open roles to be considered are reduced beforehand, f.ex. by input of the candidate,
+However, if the number of open roles to be considered are reduced beforehand, f.ex. by input of the job candidate,
 utilization and cost may drop significantly.
 
 ## Decision:
@@ -55,7 +55,7 @@ utilization and cost may drop significantly.
 We decided to proceed with Option B, where human-readable features extracted by AI are made static. This provides an
 ideal balance between transparency, testability, and resource efficiency. 
 
-While we considered Option F, which involves role-specific features and a static evaluation of all candidates, we
+While we considered Option F, which involves role-specific features and a static evaluation of all job candidates, we
 ultimately ruled it out because it would be too computationally expensive. Although this option would have provided
 precise and detailed evaluations, the resource demands and expected cost made it impractical for our current setup.
 
