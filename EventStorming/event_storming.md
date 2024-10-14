@@ -1,9 +1,8 @@
 # Event Storming Workshop
 
 ## Introduction
-TOOD: Add ADR-001
 
-In our recent workshop, we used Event Storming to explore and map out various domains within our business processes. The session focused on capturing and documenting the flow of events, actors, and interactions between systems. This document summarizes our outcomes and serves as a guide to understanding our approach.
+In our recent workshop, we used Event Storming decided in [ADR-001](/ADR/ADR-001-use-ddd.md) to explore and map out various domains within our business processes. The session focused on capturing and documenting the flow of events, actors, and interactions between systems. This document summarizes our outcomes and serves as a guide to understanding our approach.
 
 ## Workshop Goals
 
