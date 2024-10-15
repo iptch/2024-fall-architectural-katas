@@ -192,7 +192,9 @@ The current architecture has the following limitations:
 - **External AI Service Rate Limiting**:  
   Since AI services run independently as external entities, as described
   in [ADR-007](/ADR/ADR-007-use-of-external-llms.md), and these services introduce hard rate-limits,
-  appropriate tracking and control of traffic is essential for reliability as well as cost-control. 
+  tracking and control of traffic will be required for reliability as well as cost-control.
+  If the traffic pattern across all LLM clients needs to be known, the combination of all clients into one container
+  will need to be considered.
 
 - **User Administration**:  
   User administration through the UI is not yet part of the current concept and is dependent on initial technology

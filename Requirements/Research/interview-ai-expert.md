@@ -34,7 +34,8 @@ It leads to many [assumptions and requirements](/Requirements/requirements-and-a
     - PTU pricing is very transparent. One number they have heard was 60'000 USD / month. But this may
     vary greatly across offerings.
     - Pay as you go pricing has transparent pricing. One needs to additionally know the prompt size as well as the 
-    response size. With tools like Tiktoken, the number of tokens per prompt and response can be counted and the 
+    response size. With tools like [tiktoken](https://github.com/openai/tiktoken/blob/main/README.md), 
+    the number of tokens per prompt and response can be counted and the 
     corresponding price estimated.
     The response may be hard to predict but can also be limited by instructions in the prompt.
 - How can we test our AI?
