@@ -1,4 +1,4 @@
-# ADR-025: AT test concept
+# ADR-025: AI test concept
 
 ## Date:
 2024-09-30
