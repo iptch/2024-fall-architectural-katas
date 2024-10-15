@@ -1,9 +1,10 @@
 Interview with AI expert
 ---
 
-Many thanks to our AI expert for taking the time and provide us with insights and context from the world of LLMs.
+Many thanks to our AI expert, Dario Röthlisberger [Linkedin](https://www.linkedin.com/in/dario-r%C3%B6thlisberger-87086345/) 
+for taking the time to provide us with insights and context from the world of LLMs.
 The documentation below is not word for word, but paraphrased and summarized.
-If leads to many [assumptions and requirements](/Requirements/requirements-and-assumptions.md) in the AI context.
+It leads to many [assumptions and requirements](/Requirements/requirements-and-assumptions.md) in the AI context.
 
 # Documentation
 
@@ -17,7 +18,7 @@ If leads to many [assumptions and requirements](/Requirements/requirements-and-a
 - How often do models/versions need to be updated and why?
   - Lifecycle of models. Due to intensive development, LLMs will be EOL quickly. (timeline of 1-2 years)
 - What is the difference between context upload and training?
-  - Training is called 'fine-tuning'. Train and Testset. 
+  - Training is called 'fine-tuning'. Train and Test set. 
   - Sets need to be large and well engineered.
 - When can we expect deterministic behavior?
   - The so-called temperature setting introduces a level of randomness to the answers of an LLM.
