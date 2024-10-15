@@ -37,7 +37,7 @@ Also consider the research:
 - R21: An unlocked resume can be transferred to the registered HR system
 - R22: Employer can configure HR system for their account (see also R26 & R27)
 - R28: Employer receives a monthly report with analyses based on the defined 'Data Points' and further KPIs or metrics
-- R30: When a match is marked hired or passed on, demographic data (sex, race, age, and more..) is accumulated (Data Point 5)
+- R30: When a match is marked hired or passed on, demographic data (sex, race, age, and more) is accumulated (Data Point 5)
 - R31: Hiring manager is presented with a dashboard and workspace
 - R32: Employee can enter their demographic information (sex, race, age) on the platform
 

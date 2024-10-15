@@ -6,7 +6,7 @@
 
 ## Status:
 
-Superceded by [ADR-007](/ADR/ADR-007-use-of-external-llms.md)
+Superseded by [ADR-007](/ADR/ADR-007-use-of-external-llms.md)
 
 ## Context:
 
@@ -40,7 +40,7 @@ Separation of AI containers is driven by the
 - Cost (less memory use)
 - Scalability (more feasible due to fewer hardware requirements)
 - Maintainability (AI location clearly defined)
-- Testabiity (mock AI centrally)
+- Testability (mock AI centrally)
 - Fault tolerance (failure in AI affects only few features)
 
 ### Weakened characteristics:

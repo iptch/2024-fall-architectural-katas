@@ -20,7 +20,7 @@ Needs [ADR-004](/ADR/ADR-004-data-integrity-downplayed.md) for the decision.
 
 According to the requirements and the [Architecture Characteristics](../ArchitectureCharacteristics/Characteristics.md) we
 decided to use the Service Based Architecture. Where needed for better inteoperability and deployability we want to use
-Eventdriven Architecture.
+Event Driven Architecture.
 
 ![Architecture Style](../ADR/images/ADR-002-architecture-style.png)
 

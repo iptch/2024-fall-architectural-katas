@@ -1,4 +1,4 @@
-# Usecase: Upload and submit a resume
+# Use Case: Upload and submit a resume
 
 In this use case, the following requirements are covered:
 

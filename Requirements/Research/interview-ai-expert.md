@@ -23,7 +23,7 @@ If leads to many [assumptions and requirements](/Requirements/requirements-and-a
   - The so-called temperature setting introduces a level of randomness to the answers of an LLM.
   - Temperature setting can be minimized, also to 0. But if temperature is 0, 
   changes in the prompt may lead to more erratic changes in the result.
-  - Any change to AI oder prompt has the potential to change the outcome. But clever prompt engineering can leviate that.
+  - Any change to AI or the prompt has the potential to change the outcome. But clever prompt engineering can alleviate that.
 - What are the costs?
   - Pay as you go, pay per token (scales with the amount of text in the prompt & also incoming token).
   They had a project with relatively big but text-based prompts, where 500'000 prompts resulted in a 500'000 USD bill.

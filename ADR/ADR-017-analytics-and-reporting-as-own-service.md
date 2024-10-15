@@ -40,7 +40,7 @@ data from other systems and generate reports.
 ## Consequences:
 
 ### Strengthened characteristics:
-- Evolvability (additional analytics and reporting tools (f.ex. Datawarehouse) 
+- Evolvability (additional analytics and reporting tools (f.ex. Data Warehouse) 
 could be included in the service or only need access to this service)
 - Cost (only one service)
 - Maintainability

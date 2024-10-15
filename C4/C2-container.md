@@ -20,7 +20,7 @@ According to the service-based architecture [ADR-002](/ADR/ADR-002-architecture-
 This service is implemented as a separate microservice, as described in [ADR-009](/ADR/ADR-009-creation-of-story-as-own-microservice.md).
 
 ### Matching Container
-- **Feature Extraction**: Generates quantitative, human-readable features ("spyders") from open roles and S.M.A.R.T stories ([ADR-010](/ADR/ADR-010-create-features-from-story-not-resumes.md)).
+- **Feature Extraction**: Generates quantitative, human-readable features (referred to as "spiders")  from open roles and S.M.A.R.T stories ([ADR-010](/ADR/ADR-010-create-features-from-story-not-resumes.md)).
 - **Match Scoring**: Creates a match with a score between open roles and S.M.A.R.T stories using these features ([ADR-011](/ADR/ADR-011-deterministic-matching.md)).
 
 ### HR Integration

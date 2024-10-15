@@ -65,7 +65,7 @@ One key decision was to make the payment process synchronous, ensuring that paym
 ## 1. Iteration
 
 We conducted the initial Event Storming session by placing sticky notes on a table to map out the workflow in a physical format.
-![Event strorming sticky note](/EventStorming/assets/eventstorming_stickynotes.jpeg)
+![Event Storming sticky note](/EventStorming/assets/eventstorming_stickynotes.jpeg)
 
 ## 2. Iteration
 

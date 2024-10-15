@@ -42,7 +42,7 @@ We discussed three propositions:
 ## Decision
 
 - Proposition A: We use external LLMs
-- We need additional fault-tolerance and interoperability: we use a event-driven design for every LLM client in the system.
+- We need additional fault-tolerance and interoperability: we use an event-driven design for every LLM client in the system.
 
 ## Consequences:
 
@@ -62,5 +62,5 @@ We discussed three propositions:
 
 - Feasibility (Need to check privacy regulations)
 - Responsiveness (User-facing AIs)
-- Observability (Less metrics about external system)
+- Observability (Fewer metrics about external system)
 - Deployability (Due to the risk of LLMs becoming EOL (end-of-life). High effort of testing and migrating to new LLMs)

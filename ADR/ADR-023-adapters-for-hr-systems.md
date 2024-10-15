@@ -18,7 +18,7 @@ With that many different external systems interfacing, failures are expected to 
 ## Decision:
 - We use a separate service for handling the transmission to the external HR systems.
 - We use a dead-letter queue that holds failed attempts of transmitting resumes to an external system.
-The queue will be processed and retried periodically. To reduce resource usage, one could implement a
+The queue will be processed and retried periodically. To reduce resource usage, one could implement an
 exponential backoff algorithm for example by tracking the backoff times in a DB.
 
 ## Consequences:

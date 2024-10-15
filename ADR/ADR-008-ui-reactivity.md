@@ -9,7 +9,7 @@ Accepted
 ## Context:
 
 For [Q26](/Requirements/requirements-and-assumptions.md), we need to ensure a responsive UI.
-Some calls, especially external ones, may be long running or costly and lead to a delay in the UI.
+Some calls, especially external ones, may be long-running or costly and lead to a delay in the UI.
 
 ## Decision:
 - Whenever the UI triggers long-running calls, they need to be decoupled from the long-running threads.

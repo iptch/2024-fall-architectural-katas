@@ -16,7 +16,7 @@ We have a limited amount of time to get to an initial architecture for the Clear
 
 We use [Domain Driven Design (DDD)](https://martinfowler.com/bliki/DomainDrivenDesign.html) to get a common
 understanding of the business problem at hand.
-All team members, technical and non-technical can participate. [Eventstroming](https://www.eventstorming.com/) is used
+All team members, technical and non-technical can participate. [Event Stroming](https://www.eventstorming.com/) is used
 as a technique to get to this first domain driven designs.
 
 ## Consequences:
