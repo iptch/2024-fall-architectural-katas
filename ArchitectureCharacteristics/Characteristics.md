@@ -41,7 +41,7 @@ Reduced priorities:
 
 ## Selecting the Top 3
 
-During the requirements gathering process and the [EventStorming](/EventStorming/) session, we identified three main challenges:
+During the requirements gathering process and the [EventStorming](/EventStorming/event_storming.md) session, we identified three main challenges:
 
 - The use of AI introduces non-deterministic behavior, leading to significant uncertainty when new versions are released.
 - ClearView, as a nonprofit organization using AI, faces the risk of excessive costs.
