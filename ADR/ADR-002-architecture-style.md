@@ -10,8 +10,9 @@ Accepted
 
 ## Context:
 
-The style of the architecture is the cornerstone of a succesfull software project. Depending on the style, additional
-decisions like databases, communication patterns, ... can be derived.
+The choice of architectural style is crucial to the success of a software project. It's important to select a style that fits the problem domain, as changing it later can be costly. Consistent implementation of the architecture also enhances the system’s clarity and understanding.
+
+Depending on the style, additional decisions like databases, communication patterns, ... can be derived.
 
 Needs [ADR-004](/ADR/ADR-004-data-integrity-downplayed.md) for the decision.
 
@@ -30,3 +31,11 @@ top [7 driving characteristics](../ArchitectureCharacteristics/Characteristics.m
 
 - Service-Based Architecture is comparatively cheaper and faster to build and easier to maintain
 - Event streaming adds complexity, but enables additional decoupling of capabilities
+
+### Strengthened characteristics:
+- Testability (independent services with clear interfaces)
+- Cost (relatively straight forward to implement)
+- Agility (easy to add new services with new functionality)
+
+### Weakened characteristics
+- Elasticity (due to shared databases between servuces)
