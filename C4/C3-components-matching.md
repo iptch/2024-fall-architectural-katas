@@ -1,12 +1,23 @@
 # Components Diagram (C3) - Matching System
 
-In this C3 diagram, we explain how different components within the **Matching System** interact. The system manages saving stories and roles, extracting AI-based features, and generating matches between them. Due to the large size of the UI, it is not represented in this data flow. However, all interactions by **Job Candidates** and **Employers** happen through the UI, which communicates with the **Matching API**.
+In this C3 diagram, we explain how different components within the **Matching System** interact. 
+The system manages saving stories and roles, extracting AI-based features, and generating matches between them. 
+Due to the large size of the UI, it is not represented in this data flow. 
+However, all interactions by **Job Candidates** and **Employers** happen through the UI, 
+which communicates with the **Matching API**.
 
 ### Matching System Overview
 
-The **Matching System** facilitates saving stories and roles, rating them using AI, and matching them. It uses asynchronous processes, AI feature extraction, and periodic checks for new or unmatched stories and roles.
+The **Matching System** orchestrates the extraction of features from stories and roles, the scoring of pairs of job
+positions and resumes, and the determination of matches. 
+It uses asynchronous processes, AI feature extraction, and periodic checks for new or unmatched stories and roles.
 
-![Components Diagram (C3) - Story Processing](/C4/images/C3-components-matching.png)
+- **Deterministic Scoring**  
+  AI should only be used for feature extraction and not for the scoring and matching itself, 
+as described in [ADR-011: Deterministic Matching](/ADR/ADR-011-deterministic-matching.md).
+
+
+![Components Diagram (C3) - Story Processing](../C4/images/C3-components-matching.png)
 
 ## Data Flow
 
@@ -26,7 +37,7 @@ The **Matching System** facilitates saving stories and roles, rating them using 
 
 ### Periodic Feature Extraction
 
-1. The **Feature Extractor** periodically checks the **Shared Database** for **open roles** or **stories** without a rating.
+1. The **Feature Extractor** periodically checks the **Shared Database** for pairs of **open roles** and **stories** without a score.
 2. The **Feature Extractor** sends the unrated stories or roles to the **AI Feature Extraction Adapter** (asynchronously).
 3. The **AI Feature Extraction Adapter** forwards the request to the **AI Feature Extraction** service (external, asynchronous).
 4. The **AI Feature Extraction** service processes the story or role and sends the extracted features back to the **AI Feature Extraction Adapter**.
