@@ -31,7 +31,24 @@ demographics in the tech-industry with education, staffing and training opportun
 The *ClearView* program aims to harness AI to facilitate matches between job candidates and open roles using anonymized
 resumes.
 
-**Key Objectives:**
+Our solution consists of an architecture that is well-equipped to serve a UX application such as this. 
+One main contribution was enabling the integration of thousands of HR systems in our platform, 
+another was the efficient organisation of the data flows for our reporting and analytics domain.
+
+However, our most important focus was the fulfillment of all AI-related requirements:
+The emergence of LLMs with their promise of easy and fast solutions to previously hard to solve problems, 
+understandably drives demand for AI based solutions in IT projects.
+While there is significant potential in LLMs, there are unique risks to be considered when designing a system whose 
+core functionality leverages LLMs:
+LLMs are recent and evolve quickly, thus experienced engineers in the field are rare. Furthermore, 
+LLM services are expensive to use, however their cost is hard to predict and externally hosted solutions impose 
+rate-limits and short model lifecycles. And finally, the inherent bias in LLM models must not leak into the matching 
+process since bias is the very thing we seek to control.
+Our architecture navigates all these risks and makes the use of LLMs feasible for a Non-Profit organisation such as the 
+Diversity Cyber Council. We deliberately save cost in other parts of the architecture in order to mitigate the 
+unpredictable price tag of such an AI solution.
+
+### Key Objectives
 
 - **Develop an AI-Powered Matching Platform:** Create an effective system that minimizes bias in the hiring process.
     - Our main contributions for this objective are:
@@ -58,9 +75,9 @@ resumes.
   interview experience.
     - Our main contributions for this objective are design decisions such as:
         - Asynchronous trigger: [ADR-016](/ADR/ADR-016-matches-published-as-events.md)
-            - Fault-tolerant and scalable HR Integration Service: [ADR-023](/ADR/ADR-023-adapters-for-hr-systems.md) and
-              its
-              [visualization](/C4/C3-components-hr-integration.md)
+        - Fault-tolerant and scalable HR Integration Service: [ADR-023](/ADR/ADR-023-adapters-for-hr-systems.md) and
+          its
+          [visualization](/C4/C3-components-hr-integration.md)
 
 ## Event Storming
 
