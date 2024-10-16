@@ -149,7 +149,7 @@ components in greater detail.
 The context view allows us to get a first grasp of the actors and the external components interacting with the ClearView
 system.
 
-![Context diagram (C1)](/C4/images/C1-Context.png)
+![Context diagram (C1)](/C4/images/C4-C1-Context.drawio.svg)
 
 The full Context diagram with the description of the Actors and Systems can be found [here](/C4/C1-context.md).
 
