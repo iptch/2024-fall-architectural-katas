@@ -17,7 +17,7 @@ It uses asynchronous processes, AI feature extraction, and periodic checks for n
 as described in [ADR-011: Deterministic Matching](/ADR/ADR-011-deterministic-matching.md).
 
 
-![Components Diagram (C3) - Story Processing](../C4/images/C3-components-matching.png)
+![Components Diagram (C3) - Story Processing](../C4/images/C3-components-matching.svg)
 
 ## Data Flow
 

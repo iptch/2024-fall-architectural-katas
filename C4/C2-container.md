@@ -2,7 +2,7 @@
 
 The container diagram offers an overview of the containers of the system and how they interact with each other.
 
-![Container Diagram](/C4/images/C2-Container.png)
+![Container Diagram](/C4/images/C2-Container.svg)
 
 According to the service-based architecture [ADR-002](/ADR/ADR-002-architecture-style.md) we share the database between different containers to improve the simplicity and testability [ADR-014](/ADR/ADR-014-multiple-services-on-same-database.md). For the matches we use an event-based topic [ADR-016](/ADR/ADR-016-matches-published-as-events.md).
 

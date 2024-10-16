@@ -2,7 +2,7 @@
 
 The context diagram offers an overview of the software system, including the users interacting with it and the external systems connected to the application.
 
-![Context Diagram](/C4/images/C1-Context.png)
+![Context Diagram](/C4/images/C1-Context.svg)
 
 The survey system was designated as an external system in [ADR-20](/ADR/ADR-020-externalizing-survey-processes.md). Similarly, the mail server is also considered an external system for this application.
 

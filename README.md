@@ -149,7 +149,7 @@ components in greater detail.
 The context view allows us to get a first grasp of the actors and the external components interacting with the ClearView
 system.
 
-![Context diagram (C1)](/C4/images/C1-Context.png)
+![Context diagram (C1)](/C4/images/C1-Context.svg)
 
 The full Context diagram with the description of the Actors and Systems can be found [here](/C4/C1-context.md).
 
@@ -159,7 +159,7 @@ The Container diagram shows the high-level shape of the software architecture an
 across it.
 It also shows how the containers communicate with each another.
 
-![Container diagram (C2)](/C4/images/C2-Container.png)
+![Container diagram (C2)](/C4/images/C2-Container.svg)
 
 The full Container diagram with the descriptions of the containers and ADRs describing the decisions can be
 found [here](/C4/C2-container.md).

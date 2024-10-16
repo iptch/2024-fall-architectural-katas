@@ -12,7 +12,7 @@ In the C4 model, the C3 diagrams highlight how components within a container ope
 - **Asynchronous Event Handling**  
   The system operates asynchronously, using events to process stories, ensuring decoupling between services, as described in [ADR-005: Asynchronous Communication with External Systems](/ADR/ADR-005-async-with-external-systems.md).
 
-![Components Diagram (C3) - Story Processing](/C4/images/C3-components-story.png)
+![Components Diagram (C3) - Story Processing](/C4/images/C3-components-story.svg)
 
 
 ## Data flow

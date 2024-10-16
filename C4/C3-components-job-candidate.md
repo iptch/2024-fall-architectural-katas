@@ -13,7 +13,7 @@ In the C4 model, C3 diagrams illustrate how components within a container operat
 - **AI-Powered Resume Tips**  
   Job candidates can request feedback through the **AI Resume Tips Adapter**, which provides suggestions for improving their resumes. Once the tips are returned, they are stored in the job candidate's record via the **Resume Service**.
 
-![Components Diagram (C3) - Job Candidate](/C4/images/C3-components-job-candidate.png)
+![Components Diagram (C3) - Job Candidate](/C4/images/C3-components-job-candidate.svg)
 
 
 ## Data Flow
