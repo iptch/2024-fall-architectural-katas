@@ -1,6 +1,8 @@
-# Diversity Cyber Council - ClearView | O'Reilly Architectural Kata (Autumn 2024)
-
+# 1st place at the O'Reilly Architectural Kata Fall 2024 Katas: Diversity Cyber Council - ClearView | O'Reilly Architectural Kata (Autumn 2024)
 A (hopefully) pragmatic approach to the O'Reilly Autumn Architectural Kata 2024
+
+![Team](./ArchitectureCharacteristics/images/team.png)
+![First Place](./Katas_Place_Badge_First.png)
 
 - [Team](#team)
 - [Introduction](#introduction)
